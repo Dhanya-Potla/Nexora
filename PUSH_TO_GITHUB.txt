@@ -1,0 +1,166 @@
+═══════════════════════════════════════════════════════════
+        📤 PUSH TO GITHUB - STEP BY STEP INSTRUCTIONS
+═══════════════════════════════════════════════════════════
+
+YOUR CURRENT SITUATION:
+✅ Git repository is ready (47 files committed)
+✅ All changes are staged and committed
+❌ Cannot push to vikaskakarla/Nexora (no permissions)
+
+SOLUTION: Create your own GitHub repository
+
+═══════════════════════════════════════════════════════════
+                    🚀 FOLLOW THESE STEPS
+═══════════════════════════════════════════════════════════
+
+STEP 1: CREATE REPOSITORY ON GITHUB
+────────────────────────────────────────────────────────────
+1. Open browser: https://github.com/new
+2. Fill in:
+   - Repository name: Nexora  (or SupplyWise-Procurement)
+   - Description: AI-powered procurement intelligence platform
+   - Visibility: Public (or Private)
+   - ❌ DO NOT check "Add a README file"
+   - ❌ DO NOT add .gitignore
+   - ❌ DO NOT choose a license
+3. Click: "Create repository"
+
+STEP 2: COPY YOUR REPOSITORY URL
+────────────────────────────────────────────────────────────
+After creating, GitHub will show your repo URL:
+https://github.com/YOUR_USERNAME/Nexora.git
+
+Copy this URL!
+
+
+STEP 3: UPDATE GIT REMOTE (RUN THESE COMMANDS)
+────────────────────────────────────────────────────────────
+Open PowerShell in this folder and run:
+
+# Remove old remote
+git remote remove origin
+
+# Add YOUR repository (replace YOUR_USERNAME)
+git remote add origin https://github.com/YOUR_USERNAME/Nexora.git
+
+# Verify it's set correctly
+git remote -v
+
+
+STEP 4: PUSH TO YOUR REPOSITORY
+────────────────────────────────────────────────────────────
+# Push all commits
+git push -u origin main
+
+# You may be asked for credentials:
+# Username: YOUR_GITHUB_USERNAME
+# Password: YOUR_GITHUB_PASSWORD (or Personal Access Token)
+
+
+STEP 5: VERIFY ON GITHUB
+────────────────────────────────────────────────────────────
+Open your repository in browser:
+https://github.com/YOUR_USERNAME/Nexora
+
+You should see:
+✅ 47 files
+✅ README.md displayed
+✅ All folders (app, backend, data, etc.)
+✅ Your commit message
+
+
+═══════════════════════════════════════════════════════════
+                    🔐 IF AUTHENTICATION FAILS
+═══════════════════════════════════════════════════════════
+
+GitHub no longer accepts passwords for git operations.
+You need a Personal Access Token:
+
+1. Go to: https://github.com/settings/tokens
+2. Click: "Generate new token (classic)"
+3. Name: "Nexora Push"
+4. Scopes: Check ☑ repo
+5. Click: "Generate token"
+6. COPY THE TOKEN (you won't see it again!)
+
+When pushing:
+Username: YOUR_USERNAME
+Password: PASTE_YOUR_TOKEN_HERE
+
+
+═══════════════════════════════════════════════════════════
+                    📝 QUICK REFERENCE COMMANDS
+═══════════════════════════════════════════════════════════
+
+# Check current status
+git status
+
+# View current remote
+git remote -v
+
+# Remove old remote
+git remote remove origin
+
+# Add new remote (replace YOUR_USERNAME)
+git remote add origin https://github.com/YOUR_USERNAME/Nexora.git
+
+# Push to GitHub
+git push -u origin main
+
+
+═══════════════════════════════════════════════════════════
+                    ✅ WHAT WILL BE PUSHED
+═══════════════════════════════════════════════════════════
+
+47 FILES INCLUDING:
+✅ Complete backend (11 new Python modules)
+✅ Enhanced web UI (7 tabs, modern design)
+✅ Product catalog (15 items with images)
+✅ Supplier data (30+ real businesses)
+✅ Order history (450+ records)
+✅ Documentation (10+ markdown files)
+✅ Presentations (3 PowerPoint files)
+✅ Architecture diagrams
+✅ Policy documents
+
+❌ NOT PUSHED (excluded by .gitignore):
+❌ .env file (your credentials - PROTECTED!)
+❌ Virtual environment (.venv/)
+❌ Cache files (__pycache__)
+❌ Test Excel files
+❌ Some screenshots
+
+
+═══════════════════════════════════════════════════════════
+                    🎯 EXAMPLE WITH REAL USERNAME
+═══════════════════════════════════════════════════════════
+
+If your GitHub username is "Dhanya-Potla":
+
+git remote remove origin
+git remote add origin https://github.com/Dhanya-Potla/Nexora.git
+git push -u origin main
+
+
+═══════════════════════════════════════════════════════════
+                    🚨 IMPORTANT NOTES
+═══════════════════════════════════════════════════════════
+
+⚠️  .env file is NOT pushed (contains sensitive data)
+⚠️  You need to create your own repository first
+⚠️  Cannot push to vikaskakarla/Nexora (not your repo)
+✅  All code is already committed and ready
+✅  Just need to update remote URL and push
+
+
+═══════════════════════════════════════════════════════════
+                    📞 NEED HELP?
+═══════════════════════════════════════════════════════════
+
+Read detailed guide: GITHUB_SETUP.md
+
+GitHub docs: https://docs.github.com/en/get-started
+
+═══════════════════════════════════════════════════════════
+
+Ready to push? Start with STEP 1 above! 🚀
