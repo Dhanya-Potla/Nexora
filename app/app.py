@@ -8,12 +8,13 @@ if project_root not in sys.path:
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 os.environ["OMP_NUM_THREADS"] = "1"
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, UploadFile, File
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from fastapi.responses import HTMLResponse, StreamingResponse
 from pydantic import BaseModel
 from starlette.requests import Request
+from typing import List
 
 from backend.main_engine import rag_system
 from backend.session_store import session_store
@@ -21,6 +22,10 @@ from backend.vector_store import load_vector_store
 from backend.query_cache import query_cache
 from backend.analytics import analytics_engine
 from backend.exporter import exporter
+from backend import supplywise_pipeline
+from backend import excel_handler
+from backend import comparison_engine
+from backend import products_data
 from fastapi.responses import Response, FileResponse
 
 app = FastAPI(title="Secure ISRO RAG")
@@ -30,6 +35,16 @@ async def startup_event():
     print("Application starting up... Eagerly loading models.")
     # This ensures the model and vector store are loaded in the main thread
     load_vector_store()
+    try:
+        supplywise_pipeline.get_vector_store()
+        supplywise_pipeline.get_risk_model()
+    except Exception as e:
+        print(f"SupplyWise init warning (will retry lazily on first request): {e}")
+    try:
+        from backend import supplywise_graph
+        supplywise_graph.populate_graph()
+    except Exception as e:
+        print(f"SupplyWise graph unavailable (Neo4j not reachable) - continuing without it: {e}")
 
 templates = Jinja2Templates(directory="app/templates")
 
@@ -45,11 +60,34 @@ class LoginRequest(BaseModel):
 
 @app.get("/", response_class=HTMLResponse)
 async def read_root(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request})
+    return templates.TemplateResponse(request=request, name="index.html")
 
 @app.get("/analytics", response_class=HTMLResponse)
 async def analytics_dashboard(request: Request):
-    return templates.TemplateResponse("analytics.html", {"request": request})
+    return templates.TemplateResponse(request=request, name="analytics.html")
+
+@app.get("/supplywise", response_class=HTMLResponse)
+async def supplywise_page(request: Request):
+    return templates.TemplateResponse(request=request, name="supplywise.html")
+
+@app.get("/supplywise/dashboard")
+async def supplywise_dashboard():
+    return supplywise_pipeline.get_dashboard_data()
+
+class SupplyWiseQueryRequest(BaseModel):
+    query: str
+
+@app.post("/supplywise/query")
+async def supplywise_query(request: SupplyWiseQueryRequest):
+    return supplywise_pipeline.answer_query(request.query)
+
+@app.get("/supplywise/search")
+async def supplywise_search(q: str, k: int = 5):
+    return {"results": supplywise_pipeline.semantic_supplier_search(q, k)}
+
+@app.get("/supplywise/compare")
+async def supplywise_compare(a: str, b: str):
+    return supplywise_pipeline.compare_suppliers(a, b)
 
 @app.post("/login")
 async def login_user(req: LoginRequest):
@@ -200,6 +238,183 @@ async def clear_cache():
 async def get_top_cached_queries(limit: int = 10):
     """Get most frequently accessed cached queries"""
     return query_cache.get_top_queries(limit)
+
+# ===== NEW FEATURES: EXCEL, COMPARISON, PRODUCTS =====
+
+@app.post("/supplywise/upload")
+async def upload_suppliers(file: UploadFile = File(...)):
+    """Upload Excel/CSV file to import suppliers"""
+    try:
+        content = await file.read()
+        suppliers = excel_handler.import_suppliers_from_excel(content)
+        return {
+            "success": True,
+            "imported": len(suppliers),
+            "suppliers": suppliers[:5],  # Preview first 5
+            "message": f"Successfully imported {len(suppliers)} suppliers"
+        }
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+@app.get("/supplywise/export")
+async def export_suppliers():
+    """Export all suppliers to Excel"""
+    try:
+        # Get all suppliers from pipeline
+        dashboard_data = supplywise_pipeline.get_dashboard_data()
+        suppliers_data = supplywise_pipeline.get_all_suppliers_with_risk()
+        
+        excel_bytes = excel_handler.export_suppliers_to_excel(suppliers_data)
+        
+        return Response(
+            content=excel_bytes,
+            media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            headers={"Content-Disposition": "attachment; filename=suppliers_export.xlsx"}
+        )
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/supplywise/template")
+async def download_template():
+    """Download Excel template for supplier import"""
+    try:
+        template_bytes = excel_handler.generate_excel_template()
+        return Response(
+            content=template_bytes,
+            media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            headers={"Content-Disposition": "attachment; filename=supplier_template.xlsx"}
+        )
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+class ComparisonRequest(BaseModel):
+    supplier_names: List[str]
+
+@app.post("/supplywise/compare")
+async def compare_suppliers_endpoint(request: ComparisonRequest):
+    """Compare multiple suppliers side-by-side"""
+    try:
+        if len(request.supplier_names) < 2:
+            raise HTTPException(status_code=400, detail="Need at least 2 suppliers to compare")
+        
+        # Get full data for each supplier
+        suppliers_data = []
+        all_suppliers = supplywise_pipeline.get_all_suppliers_with_risk()
+        
+        for name in request.supplier_names:
+            supplier = next((s for s in all_suppliers if s['name'] == name), None)
+            if supplier:
+                suppliers_data.append(supplier)
+            else:
+                raise HTTPException(status_code=404, detail=f"Supplier '{name}' not found")
+        
+        comparison = comparison_engine.compare_suppliers(suppliers_data)
+        return comparison
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/supplywise/suppliers/list")
+async def get_suppliers_list(
+    category: str = None,
+    risk_level: str = None,
+    location: str = None,
+    min_on_time: float = None
+):
+    """Get filtered list of suppliers"""
+    try:
+        suppliers = supplywise_pipeline.get_all_suppliers_with_risk()
+        
+        # Apply filters
+        if category:
+            suppliers = [s for s in suppliers if s.get('category', '').lower() == category.lower()]
+        
+        if risk_level:
+            suppliers = [s for s in suppliers if s.get('risk_level', '').lower() == risk_level.lower()]
+        
+        if location:
+            suppliers = [s for s in suppliers if location.lower() in s.get('location', '').lower()]
+        
+        if min_on_time is not None:
+            suppliers = [s for s in suppliers if s.get('on_time_rate', 0) >= min_on_time]
+        
+        return {
+            "total": len(suppliers),
+            "suppliers": suppliers
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/supplywise/filters/options")
+async def get_filter_options():
+    """Get available filter options"""
+    try:
+        suppliers = supplywise_pipeline.get_all_suppliers_with_risk()
+        
+        categories = list(set(s.get('category', '') for s in suppliers if s.get('category')))
+        locations = list(set(s.get('location', '') for s in suppliers if s.get('location')))
+        risk_levels = ['Low', 'Medium', 'High']
+        
+        return {
+            "categories": sorted(categories),
+            "locations": sorted(locations),
+            "risk_levels": risk_levels
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+# ===== PRODUCTS ENDPOINTS =====
+
+@app.get("/supplywise/products")
+async def get_all_products(category: str = None, search: str = None):
+    """Get all products or filter by category/search"""
+    try:
+        if search:
+            products = products_data.search_products(search)
+        elif category:
+            products = products_data.get_products_by_category(category)
+        else:
+            products = products_data.get_all_products()
+        
+        return {
+            "total": len(products),
+            "products": products
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/supplywise/products/{product_id}")
+async def get_product_detail(product_id: str):
+    """Get detailed information about a product"""
+    try:
+        product = products_data.get_product_by_id(product_id)
+        if not product:
+            raise HTTPException(status_code=404, detail="Product not found")
+        return product
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/supplywise/products/categories/list")
+async def get_product_categories():
+    """Get list of product categories"""
+    try:
+        categories = products_data.get_product_categories()
+        return {
+            "categories": sorted(categories)
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/supplywise/products/summary")
+async def get_products_summary():
+    """Get summary statistics about products"""
+    try:
+        return products_data.get_products_summary()
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
 if __name__ == "__main__":
     import uvicorn

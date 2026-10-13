@@ -1,0 +1,162 @@
+order_id,supplier_id,product,quantity,unit_price_inr,delivery_delay_days,status
+ORD-0001,SUP-001,PCB Assembly,1972,3364.8,0,Delivered
+ORD-0002,SUP-001,Sensor Array,1835,29759.22,0,Delivered
+ORD-0003,SUP-001,Power Supply Module,1256,49064.45,0,Delivered
+ORD-0004,SUP-001,PCB Assembly,1550,26976.51,0,Delivered
+ORD-0005,SUP-002,Sensor Array,692,14332.94,0,Delivered
+ORD-0006,SUP-002,Sensor Array,374,23891.94,0,Delivered
+ORD-0007,SUP-002,PCB Assembly,1387,38921.13,1,Delivered
+ORD-0008,SUP-002,Microcontroller Unit,867,48714.28,4,Delivered
+ORD-0009,SUP-002,PCB Assembly,58,16255.2,0,Delivered
+ORD-0010,SUP-002,Microcontroller Unit,896,15200.16,0,Delivered
+ORD-0011,SUP-002,Sensor Array,1926,8779.35,0,Delivered
+ORD-0012,SUP-003,PCB Assembly,608,35969.1,0,Delivered
+ORD-0013,SUP-003,Power Supply Module,1004,28234.38,2,Delivered
+ORD-0014,SUP-003,Power Supply Module,842,41588.77,0,Delivered
+ORD-0015,SUP-003,Power Supply Module,321,25209.54,4,Delivered
+ORD-0016,SUP-003,Microcontroller Unit,321,48344.35,0,Delivered
+ORD-0017,SUP-004,Sensor Array,1932,8091.85,8,Delivered
+ORD-0018,SUP-004,PCB Assembly,1507,2729.19,13,Delivered
+ORD-0019,SUP-004,PCB Assembly,1630,27979.52,2,Delivered
+ORD-0020,SUP-004,Microcontroller Unit,664,40283.76,8,Delivered
+ORD-0021,SUP-004,Power Supply Module,1380,31668.19,8,Delivered
+ORD-0022,SUP-004,PCB Assembly,694,43438.92,6,Delivered
+ORD-0023,SUP-005,Power Supply Module,1290,28558.53,5,Delivered
+ORD-0024,SUP-005,Microcontroller Unit,1923,27503.75,4,Delivered
+ORD-0025,SUP-005,Power Supply Module,976,12712.17,0,Delivered
+ORD-0026,SUP-005,Microcontroller Unit,709,29913.71,0,Delivered
+ORD-0027,SUP-005,Power Supply Module,517,22391.9,2,Delivered
+ORD-0028,SUP-005,Sensor Array,1067,6349.58,0,Delivered
+ORD-0029,SUP-005,Sensor Array,1176,6530.88,0,Delivered
+ORD-0030,SUP-006,CNC Machined Part,1460,21031.29,0,Delivered
+ORD-0031,SUP-006,Welded Frame,1370,36175.15,0,Delivered
+ORD-0032,SUP-006,Aluminum Housing,1605,40028.27,2,Delivered
+ORD-0033,SUP-006,Welded Frame,108,4592.61,5,Delivered
+ORD-0034,SUP-007,Welded Frame,181,48555.82,0,Delivered
+ORD-0035,SUP-007,Steel Bracket,747,49230.27,0,Delivered
+ORD-0036,SUP-007,CNC Machined Part,892,674.29,0,Delivered
+ORD-0037,SUP-007,Welded Frame,1994,39080.05,0,Delivered
+ORD-0038,SUP-007,Welded Frame,378,9564.84,0,Delivered
+ORD-0039,SUP-007,Steel Bracket,496,47483.59,0,Delivered
+ORD-0040,SUP-007,Steel Bracket,70,43252.04,2,Delivered
+ORD-0041,SUP-007,Steel Bracket,66,48080.31,4,Delivered
+ORD-0042,SUP-008,Steel Bracket,1558,41786.83,0,Delivered
+ORD-0043,SUP-008,Aluminum Housing,261,20736.35,2,Delivered
+ORD-0044,SUP-008,Welded Frame,1247,11049.38,2,Delivered
+ORD-0045,SUP-008,Aluminum Housing,1845,40138.48,4,Delivered
+ORD-0046,SUP-008,Welded Frame,141,49783.37,0,Delivered
+ORD-0047,SUP-008,Aluminum Housing,1789,20922.23,0,Delivered
+ORD-0048,SUP-008,Steel Bracket,656,16942.05,0,Delivered
+ORD-0049,SUP-009,Aluminum Housing,324,6497.55,0,Delivered
+ORD-0050,SUP-009,Aluminum Housing,515,36485.59,2,Delivered
+ORD-0051,SUP-009,Welded Frame,886,3838.18,0,Delivered
+ORD-0052,SUP-009,Welded Frame,1270,3676.07,2,Delivered
+ORD-0053,SUP-009,Steel Bracket,974,21357.03,0,Delivered
+ORD-0054,SUP-009,Welded Frame,1407,30242.14,2,Delayed
+ORD-0055,SUP-009,Steel Bracket,1608,33578.76,2,Delivered
+ORD-0056,SUP-010,Steel Bracket,1909,37306.01,0,Delivered
+ORD-0057,SUP-010,Aluminum Housing,822,33021.11,0,Delivered
+ORD-0058,SUP-010,Aluminum Housing,1198,43838.01,2,Delivered
+ORD-0059,SUP-010,CNC Machined Part,1536,25523.64,0,Delivered
+ORD-0060,SUP-010,Aluminum Housing,1609,26347.44,1,Delivered
+ORD-0061,SUP-011,Foam Insert,1735,11810.1,0,Delivered
+ORD-0062,SUP-011,Pallet,1133,6028.1,0,Delayed
+ORD-0063,SUP-011,Shrink Wrap Roll,1895,37708.81,2,Delivered
+ORD-0064,SUP-011,Foam Insert,1560,6617.06,0,Delivered
+ORD-0065,SUP-011,Pallet,696,25175.55,2,Delivered
+ORD-0066,SUP-012,Shrink Wrap Roll,91,13570.35,7,Delivered
+ORD-0067,SUP-012,Shrink Wrap Roll,784,18192.99,3,Delivered
+ORD-0068,SUP-012,Pallet,1232,19946.52,5,Delivered
+ORD-0069,SUP-012,Corrugated Box,834,42839.52,4,Delivered
+ORD-0070,SUP-012,Corrugated Box,90,19192.02,8,Delivered
+ORD-0071,SUP-012,Foam Insert,1649,46634.12,4,Delivered
+ORD-0072,SUP-012,Foam Insert,454,22712.01,5,Delivered
+ORD-0073,SUP-012,Corrugated Box,204,25275.3,2,Delivered
+ORD-0074,SUP-013,Foam Insert,1929,30458.34,0,Delivered
+ORD-0075,SUP-013,Pallet,637,2246.76,0,Delivered
+ORD-0076,SUP-013,Shrink Wrap Roll,457,39174.22,0,Delivered
+ORD-0077,SUP-013,Shrink Wrap Roll,1914,3221.76,0,Delivered
+ORD-0078,SUP-014,Corrugated Box,72,2185.49,0,Delivered
+ORD-0079,SUP-014,Foam Insert,1685,35294.39,0,Delivered
+ORD-0080,SUP-014,Pallet,987,16946.91,3,Delivered
+ORD-0081,SUP-015,Shrink Wrap Roll,1502,34571.54,0,Delivered
+ORD-0082,SUP-015,Corrugated Box,1835,26378.74,0,Delivered
+ORD-0083,SUP-015,Shrink Wrap Roll,971,31091.22,0,Delivered
+ORD-0084,SUP-015,Foam Insert,966,27286.67,3,Delivered
+ORD-0085,SUP-015,Corrugated Box,1012,14890.38,0,Delivered
+ORD-0086,SUP-015,Foam Insert,748,20859.32,0,Delivered
+ORD-0087,SUP-015,Pallet,1057,12473.05,2,Delivered
+ORD-0088,SUP-015,Foam Insert,1553,30307.31,0,Delayed
+ORD-0089,SUP-016,Protective Fabric,1487,31320.03,3,Delivered
+ORD-0090,SUP-016,Woven Liner,764,12289.24,2,Delivered
+ORD-0091,SUP-016,Filter Mesh,263,25765.06,1,Delivered
+ORD-0092,SUP-016,Insulation Cloth,1107,30829.17,2,Delivered
+ORD-0093,SUP-016,Insulation Cloth,1888,8896.37,0,Delivered
+ORD-0094,SUP-016,Protective Fabric,533,18055.06,2,Delayed
+ORD-0095,SUP-016,Protective Fabric,1702,41745.63,0,Delivered
+ORD-0096,SUP-017,Woven Liner,1743,15648.64,9,Delivered
+ORD-0097,SUP-017,Filter Mesh,1343,42839.46,8,Delivered
+ORD-0098,SUP-017,Protective Fabric,1655,46866.42,4,Delivered
+ORD-0099,SUP-018,Woven Liner,440,7912.41,0,Delivered
+ORD-0100,SUP-018,Woven Liner,1266,10840.16,2,Delivered
+ORD-0101,SUP-018,Woven Liner,1176,35439.13,0,Delivered
+ORD-0102,SUP-019,Insulation Cloth,1024,2104.76,2,Delivered
+ORD-0103,SUP-019,Insulation Cloth,734,24223.67,0,Delivered
+ORD-0104,SUP-019,Insulation Cloth,1785,39793.79,0,Delivered
+ORD-0105,SUP-019,Filter Mesh,1651,26159.29,3,Delivered
+ORD-0106,SUP-019,Protective Fabric,1590,30716.23,2,Delivered
+ORD-0107,SUP-019,Filter Mesh,1362,15070.9,0,Delayed
+ORD-0108,SUP-019,Insulation Cloth,1414,47584.16,0,Delivered
+ORD-0109,SUP-019,Filter Mesh,772,30455.74,0,Delivered
+ORD-0110,SUP-020,Protective Fabric,592,5986.8,5,Delivered
+ORD-0111,SUP-020,Filter Mesh,624,29590.08,3,Delivered
+ORD-0112,SUP-020,Protective Fabric,526,21196.6,7,Delivered
+ORD-0113,SUP-020,Insulation Cloth,745,14179.08,4,Delivered
+ORD-0114,SUP-020,Woven Liner,1248,20882.61,12,Delayed
+ORD-0115,SUP-020,Protective Fabric,666,32978.63,4,Delivered
+ORD-0116,SUP-020,Protective Fabric,1727,7036.31,7,Delivered
+ORD-0117,SUP-020,Woven Liner,902,20232.65,10,Delayed
+ORD-0118,SUP-021,Warehousing Slot,1642,6767.64,2,Delivered
+ORD-0119,SUP-021,Warehousing Slot,1110,21081.24,1,Delivered
+ORD-0120,SUP-021,Last-Mile Delivery,259,33711.81,4,Delivered
+ORD-0121,SUP-022,Warehousing Slot,97,22317.35,1,Delivered
+ORD-0122,SUP-022,Warehousing Slot,1222,28549.57,0,Delivered
+ORD-0123,SUP-022,Freight Service,1062,8145.3,0,Delivered
+ORD-0124,SUP-022,Freight Service,1293,1169.23,1,Delivered
+ORD-0125,SUP-022,Warehousing Slot,1003,42042.26,2,Delivered
+ORD-0126,SUP-022,Cold Chain Transport,1945,23199.38,1,Delivered
+ORD-0127,SUP-022,Warehousing Slot,1539,24390.79,2,Delivered
+ORD-0128,SUP-023,Cold Chain Transport,1565,21138.28,0,Delivered
+ORD-0129,SUP-023,Freight Service,266,40608.23,3,Delivered
+ORD-0130,SUP-023,Warehousing Slot,1530,25349.31,0,Delivered
+ORD-0131,SUP-024,Last-Mile Delivery,192,34686.43,1,Delivered
+ORD-0132,SUP-024,Warehousing Slot,1145,32973.95,0,Delivered
+ORD-0133,SUP-024,Cold Chain Transport,295,13810.47,0,Delivered
+ORD-0134,SUP-024,Last-Mile Delivery,1274,17898.07,0,Delivered
+ORD-0135,SUP-025,Warehousing Slot,533,42563.11,0,Delivered
+ORD-0136,SUP-025,Last-Mile Delivery,1711,42270.28,0,Delivered
+ORD-0137,SUP-025,Freight Service,795,47510.67,1,Delivered
+ORD-0138,SUP-025,Cold Chain Transport,765,33861.2,0,Delivered
+ORD-0139,SUP-026,Industrial Adhesive,1258,43883.31,3,Delivered
+ORD-0140,SUP-026,Coating Solvent,1083,28229.95,1,Delivered
+ORD-0141,SUP-026,Coating Solvent,883,47286.36,0,Delivered
+ORD-0142,SUP-026,Cleaning Agent,1353,34135.56,0,Delivered
+ORD-0143,SUP-026,Coating Solvent,457,38086.36,4,Delivered
+ORD-0144,SUP-027,Cleaning Agent,304,22083.14,0,Delivered
+ORD-0145,SUP-027,Lubricant,1154,35117.17,0,Delivered
+ORD-0146,SUP-027,Industrial Adhesive,414,30332.92,0,Delivered
+ORD-0147,SUP-027,Lubricant,1745,43136.39,6,Delivered
+ORD-0148,SUP-027,Industrial Adhesive,1743,40080.2,4,Delivered
+ORD-0149,SUP-027,Industrial Adhesive,1523,1344.93,4,Delivered
+ORD-0150,SUP-027,Lubricant,465,35247.58,0,Delivered
+ORD-0151,SUP-028,Coating Solvent,615,33947.18,0,Delivered
+ORD-0152,SUP-028,Industrial Adhesive,727,25842.48,0,Delivered
+ORD-0153,SUP-028,Lubricant,1367,47515.65,2,Delivered
+ORD-0154,SUP-029,Industrial Adhesive,1905,47279.79,0,Delivered
+ORD-0155,SUP-029,Lubricant,1810,1082.5,0,Delayed
+ORD-0156,SUP-029,Cleaning Agent,1992,22112.81,0,Delivered
+ORD-0157,SUP-029,Cleaning Agent,229,43659.18,0,Delivered
+ORD-0158,SUP-030,Lubricant,623,21308.74,0,Delivered
+ORD-0159,SUP-030,Industrial Adhesive,892,10877.98,0,Delivered
+ORD-0160,SUP-030,Cleaning Agent,367,3833.5,0,Delivered
+ORD-0161,SUP-030,Industrial Adhesive,757,47224.43,0,Delivered

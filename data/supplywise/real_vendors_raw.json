@@ -1,0 +1,2562 @@
+[
+  {
+    "name": "Imagine Store",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "6, Swamy Vivekananda Road",
+    "phone": "+91 80 67142201",
+    "website": "https://imaginestore.org/",
+    "osm_id": 2480865069,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Techno Products",
+    "category": "Metal Fabrication",
+    "location": "Bengaluru",
+    "address": "65, 2nd Cross",
+    "phone": "+91 80 2338 1707",
+    "website": null,
+    "osm_id": 2480869567,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Asus / Dell Service Center",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "53-58, 3rd Floor, Chakravarthi Complex, Sajjan Rao Circle",
+    "phone": "00918041205444",
+    "website": "http://www.regenersis.in",
+    "osm_id": 3602709124,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Adishwar India Limited",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "No 14, 10th, Vidhya Vardhaka Sangha Road",
+    "phone": "080-41610910",
+    "website": "https://www.adishwarestore.com/",
+    "osm_id": 4194066092,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Decopark",
+    "category": "Metal Fabrication",
+    "location": "Bengaluru",
+    "address": "42/49, Mariyappana Palya Main Road",
+    "phone": "08023241418",
+    "website": null,
+    "osm_id": 4216745289,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Parmar",
+    "category": "Packaging",
+    "location": "Bengaluru",
+    "address": "16, Modi Hospital Main Road",
+    "phone": "+(91)-80-23496604",
+    "website": null,
+    "osm_id": 4383592315,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Naveen Electronics",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": null,
+    "phone": "+91 94492 55733",
+    "website": null,
+    "osm_id": 4432576889,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Wiliam Penn",
+    "category": "Packaging",
+    "location": "Bengaluru",
+    "address": "Ashok Nagar, 15 Magrath Road",
+    "phone": "08041127993",
+    "website": "https://www.williampenn.net/",
+    "osm_id": 4443310734,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Reliance Digital",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "Survey No. 132P, 133P, & 134P, Nagawara Junction, Manayata Tech Park, Thanisandra Main Road",
+    "phone": "80672 94052",
+    "website": "https://www.reliancedigital.in/",
+    "osm_id": 4443476633,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "I centre",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "Survey No. 132P, 133P, & 134P, Nagawara Junction, Manayata Tech Park, Thanisandra Main Road",
+    "phone": "8067294099",
+    "website": "www.icentre.co.in",
+    "osm_id": 4443479591,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Home town",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "LG-34, Sampige Road",
+    "phone": "+918030160208",
+    "website": null,
+    "osm_id": 4445660392,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Samsung",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "Balmuri Main Road, Hulimavu,, Bannerghatta Road",
+    "phone": "+918067080229",
+    "website": "https://www.samsung.com/",
+    "osm_id": 4445853881,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Sangeetha",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "Balmuri Main Road, Hulimavu, Bannerghatta Road",
+    "phone": "+917847888283",
+    "website": "https://www.sangeethamobiles.com/",
+    "osm_id": 4445862197,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Cromā",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "LG-34, Sampige Road",
+    "phone": "+917207666000",
+    "website": "https://www.croma.com/",
+    "osm_id": 4446286774,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Jumbo",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "LG-34, Sampige Road",
+    "phone": "+918022667198",
+    "website": null,
+    "osm_id": 4446293640,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Relience Digital",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "LG-34, Sampige Road",
+    "phone": "8022667001",
+    "website": "https://www.reliancedigital.in/",
+    "osm_id": 4446311356,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Royal Enfield",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "LG-34, Sampige Road",
+    "phone": "+91 0973807838",
+    "website": "https://www.royalenfield.com/",
+    "osm_id": 4446521799,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Basaveshwara Glass And Plywoods",
+    "category": "Metal Fabrication",
+    "location": "Bengaluru",
+    "address": "mathru Sree Orchid Homes, 4, Kempapura Main Rd, Kempapura, Bellandur,",
+    "phone": "+91 8065667444",
+    "website": "https://business.google.com/",
+    "osm_id": 4447110226,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "I store",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "Whitefield Main Road, Mahadevpura, Devasandra Industrial Estate, Krishnarajapuram",
+    "phone": "+918067266444",
+    "website": "www.istoreindia.com",
+    "osm_id": 4447273113,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Cromā",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "Whitefield Main Road, Mahadevpura, Devasandra Industrial Estate, Krishnarajapuram",
+    "phone": "+917207666000",
+    "website": "https://www.croma.com/",
+    "osm_id": 4447439478,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Reliance Digital",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "Whitefield Main Road, Mahadevpura, Devasandra Industrial Estate, Krishnarajapuram",
+    "phone": "+918067266222",
+    "website": "https://www.reliancedigital.in/",
+    "osm_id": 4447458448,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Poorvika",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "Whitefield Road, Mahadevpura",
+    "phone": "8067266502",
+    "website": "https://www.poorvikamobile.com/",
+    "osm_id": 4448653289,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Shree Sudarshan Light And Appliances",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "62, A. M. Lane",
+    "phone": "(91)-9986419127",
+    "website": "www.smartgrahak.com",
+    "osm_id": 4487996362,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Shree Venkateshwara Traders",
+    "category": "Metal Fabrication",
+    "location": "Bengaluru",
+    "address": "712, Modi Hospital Main Road",
+    "phone": "9036092531",
+    "website": null,
+    "osm_id": 4559831520,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Amar Radio Corporation",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "134-138, K K, Sadar Patrappa Road",
+    "phone": "08046480000",
+    "website": "https://www.amarradio.com/",
+    "osm_id": 4562950692,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "S Abbas & Co",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "59/2, Sadar Patrappa Road",
+    "phone": "08022225569",
+    "website": null,
+    "osm_id": 4563000590,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "New Diamond Electro Control",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "21, E V Lane, S P Road Cross,",
+    "phone": "9880667862",
+    "website": null,
+    "osm_id": 4563018489,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Jai Hind Agencies",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "9/4, E V Lane, S P Road Cross",
+    "phone": "9663167076",
+    "website": null,
+    "osm_id": 4563035990,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "A M Power Tools",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "56/2B, G R Lane, S p road Cross",
+    "phone": "9164212461",
+    "website": null,
+    "osm_id": 4563051090,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Sri Lakshmi electronics",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "66/4, Sadar Patrappa Road",
+    "phone": "9341084842",
+    "website": null,
+    "osm_id": 4563052091,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Vishal electronics",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "139/7, Sadar Patrappa Road",
+    "phone": "9886717462",
+    "website": null,
+    "osm_id": 4563100690,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Burhani Rubber & Polymer",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "82/1, S J P Road",
+    "phone": "08041145417",
+    "website": null,
+    "osm_id": 4563140390,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Power Tools & Tackles",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "104/1, Narasimharaja Road",
+    "phone": "9945009793",
+    "website": null,
+    "osm_id": 4563188589,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "M M Trading Company",
+    "category": "Metal Fabrication",
+    "location": "Bengaluru",
+    "address": "14, MRR Lane",
+    "phone": "9845004864",
+    "website": null,
+    "osm_id": 4563372290,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Reliance tools centre",
+    "category": "Metal Fabrication",
+    "location": "Bengaluru",
+    "address": "33, Silver Jubilee Park Road",
+    "phone": "9342633632",
+    "website": null,
+    "osm_id": 4564567189,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Solar panels and Equipment",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "7th Cross",
+    "phone": "8032961333",
+    "website": null,
+    "osm_id": 4564764389,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Bhandari electronics",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "68, Sadar Patrappa Road",
+    "phone": "32511101",
+    "website": null,
+    "osm_id": 4564919889,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "unilet solar solutions",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "411, 8th Cross Road",
+    "phone": "9632417722",
+    "website": "https://www.uniletsolar.com/",
+    "osm_id": 4758186134,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Chandan Electricals & Hardware",
+    "category": "Metal Fabrication",
+    "location": "Bengaluru",
+    "address": "1st Main, Doddanekundi",
+    "phone": "9845448540",
+    "website": null,
+    "osm_id": 5503369887,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Navdeep Electronics",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "68/1, Sadar Patrappa Road",
+    "phone": "08041225559",
+    "website": null,
+    "osm_id": 5786021053,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "iMagine",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "27th Main Road",
+    "phone": "096866 85406",
+    "website": null,
+    "osm_id": 5961493019,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Sri Ram Electricals",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": null,
+    "phone": "08041221753",
+    "website": null,
+    "osm_id": 6419006085,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Sri Anand Electricals",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "63/1, A M Lane",
+    "phone": "+919986174238",
+    "website": null,
+    "osm_id": 6419006086,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Cauvery Electricals",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "71, A M Lane",
+    "phone": "+918022261999",
+    "website": null,
+    "osm_id": 6419024186,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Kärcher",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": null,
+    "phone": "1800 1234 180",
+    "website": "https://www.kaercher.com/in/",
+    "osm_id": 7256985351,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Paridhan",
+    "category": "Textiles",
+    "location": "Bengaluru",
+    "address": "9, Mohana Jineshwara Arcade, 3rd Floor, P S Lane, Santhusapet",
+    "phone": "+918197411114",
+    "website": null,
+    "osm_id": 10725600002,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Iss relocations",
+    "category": "Logistics",
+    "location": "Bengaluru",
+    "address": null,
+    "phone": "+91 81239 56569;+971 4 234 8100",
+    "website": "https://iss-relocations.com/",
+    "osm_id": 11042181457,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Nano Technology",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "48, Chamrajpet 5th Main Road",
+    "phone": "+91 86606 80577",
+    "website": null,
+    "osm_id": 11178079809,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Sri Kumara Stores",
+    "category": "Packaging",
+    "location": "Bengaluru",
+    "address": "177, Chamrajpet 5th Main Road",
+    "phone": "+91 90607 06020",
+    "website": null,
+    "osm_id": 11178079813,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Lakshmi Hardware",
+    "category": "Metal Fabrication",
+    "location": "Bengaluru",
+    "address": "13, 2nd Cross, 4th Main",
+    "phone": "+91 80 2661 2937",
+    "website": null,
+    "osm_id": 11178123512,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Sree Ram Electricals",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "235, 2nd Cross, 4th Main",
+    "phone": "+91 99005 95936",
+    "website": null,
+    "osm_id": 11178123523,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Hiren Electric Corporation",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": null,
+    "phone": "+91 98440 23866",
+    "website": null,
+    "osm_id": 11178124711,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Ambemaa Enterprises",
+    "category": "Metal Fabrication",
+    "location": "Bengaluru",
+    "address": null,
+    "phone": "+91 99167 32626",
+    "website": null,
+    "osm_id": 11178124991,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Rainbow Electricals and Engineers",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": null,
+    "phone": "+91 98450 71783",
+    "website": null,
+    "osm_id": 11178144316,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Meghana Motors & Pumps",
+    "category": "Metal Fabrication",
+    "location": "Bengaluru",
+    "address": null,
+    "phone": "+91 93412 13815",
+    "website": null,
+    "osm_id": 11178172460,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Reliance SMART Superstore",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "1254/46/3/1, Vidyaranyapura Main Rd, near Indian Oil Petrol Pump, Doddabommasandra",
+    "phone": "18008910001",
+    "website": "https://stores.reliancesmartbazaar.com/reliance-smart-superstore-hypermarket-vidyaranyapura-bengaluru-280327/Home",
+    "osm_id": 11215176140,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Fab.to.lab",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "525, 2nd A Main Road, HSR Layout",
+    "phone": "+91 6361942383",
+    "website": "https://www.fabtolab.com/",
+    "osm_id": 11259449032,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Apple Store",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": "Hosur Road",
+    "phone": "+9108046999888",
+    "website": null,
+    "osm_id": 11396038128,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "N K Hardware",
+    "category": "Metal Fabrication",
+    "location": "Bengaluru",
+    "address": null,
+    "phone": "+91 98804 22854",
+    "website": null,
+    "osm_id": 12366523831,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Rekha Hardware and Ceramics",
+    "category": "Metal Fabrication",
+    "location": "Bengaluru",
+    "address": "8, Ullal Main Road",
+    "phone": "99000000796",
+    "website": null,
+    "osm_id": 12651764013,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Shree Balaji Steel Fabrication",
+    "category": "Metal Fabrication",
+    "location": "Bengaluru",
+    "address": null,
+    "phone": "+91 9723902929",
+    "website": null,
+    "osm_id": 12874872232,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Digisol",
+    "category": "Electronics",
+    "location": "Bengaluru",
+    "address": null,
+    "phone": "08026789042",
+    "website": "https://www.digisol.com",
+    "osm_id": 13073507650,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Sangam Hardware",
+    "category": "Metal Fabrication",
+    "location": "Bengaluru",
+    "address": null,
+    "phone": "+91 8073704076",
+    "website": null,
+    "osm_id": 13076096084,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "SLV Enterprises",
+    "category": "Metal Fabrication",
+    "location": "Bengaluru",
+    "address": null,
+    "phone": "+91 63630 26894; +91 63600 51989",
+    "website": null,
+    "osm_id": 13176724497,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "S R Steel",
+    "category": "Metal Fabrication",
+    "location": "Bengaluru",
+    "address": null,
+    "phone": "+91 9972516089",
+    "website": null,
+    "osm_id": 13259525667,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "ST Courier",
+    "category": "Logistics",
+    "location": "Chennai",
+    "address": "MKN Road",
+    "phone": "+91 9551785177",
+    "website": "https://stcourier.com/",
+    "osm_id": 5561615008,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Sri Ram Hardware Stores",
+    "category": "Metal Fabrication",
+    "location": "Chennai",
+    "address": "No.1, 2 & 4, T.N.H.B Shopping Complex, Chidambaram Rd, Pari Nagar, West Jafferkhanpet, Chennai, Tamil Nadu 600083",
+    "phone": "044 2489 5775",
+    "website": null,
+    "osm_id": 8096902949,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Icon Office Equipments",
+    "category": "Electronics",
+    "location": "Chennai",
+    "address": "71/22, Cheran Street",
+    "phone": "044 4558 8866",
+    "website": "http://iconofficeequipments.com/",
+    "osm_id": 8108579750,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Sri Murugan Hardwares",
+    "category": "Metal Fabrication",
+    "location": "Chennai",
+    "address": "Shop No. 91, 7-B, Gangai Amman Koil St, VSM Garden, West Jafferkhanpet, Chennai, Tamil Nadu 600083",
+    "phone": "044 2489 4876",
+    "website": null,
+    "osm_id": 8108595062,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Reliance Digital",
+    "category": "Electronics",
+    "location": "Chennai",
+    "address": "391, Velachery Main Road",
+    "phone": "+91 44 2243 2174",
+    "website": null,
+    "osm_id": 8616601057,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Girias",
+    "category": "Electronics",
+    "location": "Chennai",
+    "address": "64, Medavakkam Main Road",
+    "phone": "+91 89399 70359;+91 89399 70360",
+    "website": null,
+    "osm_id": 8669165836,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Cromā Phoenix Marketcity",
+    "category": "Electronics",
+    "location": "Chennai",
+    "address": null,
+    "phone": "+919282132428",
+    "website": null,
+    "osm_id": 10558996776,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Iss relocations",
+    "category": "Logistics",
+    "location": "Chennai",
+    "address": null,
+    "phone": "+91 44 4203 1882;+91 98848 27496;+971 4 234 8100",
+    "website": "https://iss-relocations.com/",
+    "osm_id": 11042181462,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Smily Kiddos Stationery Pvt Ltd",
+    "category": "Packaging",
+    "location": "Chennai",
+    "address": "2, Thiruvalluvar Salai",
+    "phone": "044-48581474",
+    "website": null,
+    "osm_id": 11309476916,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "S.M. Traders",
+    "category": "Metal Fabrication",
+    "location": "Chennai",
+    "address": "37, Marudupandi Street",
+    "phone": "+919962977226",
+    "website": null,
+    "osm_id": 14045662220,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "ST Courier",
+    "category": "Logistics",
+    "location": "Chennai",
+    "address": "993, TNHB Main Road",
+    "phone": "+919940529907",
+    "website": null,
+    "osm_id": 14049890105,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Sri Kumaran traders",
+    "category": "Metal Fabrication",
+    "location": "Chennai",
+    "address": "7/a, Gangai Amman Koil Street",
+    "phone": "9380084378",
+    "website": null,
+    "osm_id": 14145145848,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "MW ENTERPRIISES",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": "H33, Bali Nagar",
+    "phone": "+91-11-25437540",
+    "website": null,
+    "osm_id": 1510558207,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "MW INTERNATIONAL",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": "H33, Bali Nagar",
+    "phone": "+91-11-25437540",
+    "website": null,
+    "osm_id": 1510558220,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "SHARMA ELECTRICIAN",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": "464/20, PAYAUDI ROAD SHAKTI NAGAR",
+    "phone": "92111871640",
+    "website": null,
+    "osm_id": 5088399323,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Vijay Stationery Mart",
+    "category": "Packaging",
+    "location": "Delhi NCR",
+    "address": "18, Malcha Marg",
+    "phone": "+91-93122-41116;+91-99999-29434;+91-11-2611-3514",
+    "website": null,
+    "osm_id": 5136990523,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Deluxe Electric Works",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": "9, Malcha Marg",
+    "phone": "+91-11-2687-3375;+91-11-2611-0188;+91-98111-35176",
+    "website": null,
+    "osm_id": 5137399141,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Om Electricals",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": "C-32B",
+    "phone": "+91-92103-01837;+91-88006-14035;+91-99103-14818;+91-87430-93083",
+    "website": null,
+    "osm_id": 5647754298,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "New Delhi Stationery Mart",
+    "category": "Packaging",
+    "location": "Delhi NCR",
+    "address": "9",
+    "phone": "+91-11-4455-6677",
+    "website": "https://jainbookagency.com",
+    "osm_id": 5810595111,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Khandelwal Hardware Store",
+    "category": "Metal Fabrication",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91-85275-24550",
+    "website": null,
+    "osm_id": 5888113178,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Unique Electronics",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91-95556-66408",
+    "website": null,
+    "osm_id": 5921121048,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "South Delhi Stationery",
+    "category": "Packaging",
+    "location": "Delhi NCR",
+    "address": "96",
+    "phone": "+91 97116 26429",
+    "website": null,
+    "osm_id": 6047135411,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Malik Electricals",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": "14, IGNOU Road",
+    "phone": "+91-99110-08765;+91-98107-91965",
+    "website": null,
+    "osm_id": 6115748295,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Dharma Mobile and Stationery",
+    "category": "Packaging",
+    "location": "Delhi NCR",
+    "address": "147, IGNOU Road",
+    "phone": "+91-99904-00438;+91-85276-81267",
+    "website": null,
+    "osm_id": 6150156043,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Achiever's",
+    "category": "Packaging",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91-11-4914-9769",
+    "website": null,
+    "osm_id": 6152750695,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "DTDC",
+    "category": "Logistics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91-93505-51135",
+    "website": "https://www.dtdc.com",
+    "osm_id": 6282682553,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Empire Mart",
+    "category": "Packaging",
+    "location": "Delhi NCR",
+    "address": "95",
+    "phone": "+91-11-2642-7231;+91-11-2628-7211;+91-2628-7212;+91-98112-42587",
+    "website": "https://empiremart.in/",
+    "osm_id": 6488451938,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "KK Enterprises",
+    "category": "Metal Fabrication",
+    "location": "Delhi NCR",
+    "address": "B-99",
+    "phone": "+91-11-2647-1482",
+    "website": null,
+    "osm_id": 6539475134,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Ganesh Security Services",
+    "category": "Logistics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91-98114-58374;+91-92509-97364;+91-92502-75776",
+    "website": null,
+    "osm_id": 6755921572,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Garg Electronics",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91-93500-24601",
+    "website": null,
+    "osm_id": 6837569173,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Gourav Exports",
+    "category": "Textiles",
+    "location": "Delhi NCR",
+    "address": "82;83",
+    "phone": "+91-11-3232-8218;+91-11-3560-9136",
+    "website": null,
+    "osm_id": 6881897406,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "DP Electricals",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 99908 33314",
+    "website": null,
+    "osm_id": 6920695723,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Gupta Stationeries",
+    "category": "Packaging",
+    "location": "Delhi NCR",
+    "address": "IGNOU Road",
+    "phone": "+91 98102 60696",
+    "website": null,
+    "osm_id": 6920695724,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Arora Stationery",
+    "category": "Packaging",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 981177 3004;+91 98104 34314;+91 99908 25494",
+    "website": null,
+    "osm_id": 7026234650,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Sai Sharan Stationery and Gift Gallery",
+    "category": "Packaging",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91-77038-04148",
+    "website": null,
+    "osm_id": 7181770900,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "BSES Yamuna Power Ltd Complaint Office",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": "C2, C Block, Nand Nagri, Dilshad Garden, Delhi, 110093",
+    "phone": "01139999808",
+    "website": null,
+    "osm_id": 8667200507,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Ashish Stationery",
+    "category": "Packaging",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 99900 11665",
+    "website": null,
+    "osm_id": 8989402349,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Raj Book Store",
+    "category": "Packaging",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 95409 27552",
+    "website": null,
+    "osm_id": 8989402351,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Raj Book Centre",
+    "category": "Packaging",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 95409 27552",
+    "website": null,
+    "osm_id": 8989402353,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Singh Paints",
+    "category": "Chemicals",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91-81301-77037",
+    "website": null,
+    "osm_id": 9583197958,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Dharam Sanitary, Paints, Hardware and Electrical House",
+    "category": "Chemicals",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 99537 91856",
+    "website": null,
+    "osm_id": 9583221774,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "RN Hardware",
+    "category": "Metal Fabrication",
+    "location": "Delhi NCR",
+    "address": "554",
+    "phone": "+91-95821-81521",
+    "website": null,
+    "osm_id": 10593889338,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Inder Electronics",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": "1216;1217",
+    "phone": "+91 99993 26292;+91 98994 60250",
+    "website": null,
+    "osm_id": 10605847643,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Rameshwari Cloth House",
+    "category": "Textiles",
+    "location": "Delhi NCR",
+    "address": "A-10, Sanjay Nagar",
+    "phone": "+91-88269-16042;+91-8700-995841",
+    "website": null,
+    "osm_id": 10750406556,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Vidisha Enterprises",
+    "category": "Logistics",
+    "location": "Delhi NCR",
+    "address": "A-15, Sanjay Nagar",
+    "phone": "+91 99586 03000;+91 98998 85625",
+    "website": null,
+    "osm_id": 10750406576,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Onkar Stationary",
+    "category": "Packaging",
+    "location": "Delhi NCR",
+    "address": "A-29, Radha Swami Satsang Marg",
+    "phone": "+91989901182",
+    "website": null,
+    "osm_id": 10750480653,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Raseela Paints",
+    "category": "Chemicals",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 99530 70616;+91-93122-55557",
+    "website": null,
+    "osm_id": 10750605660,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Guru Nanak Battery House",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91-9899-300-294;+91-9899-301-964;+91-88264-09836",
+    "website": null,
+    "osm_id": 10760682610,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Chunni Lal Hazari Lal",
+    "category": "Packaging",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91-98110-64058;+91-98105-76698",
+    "website": null,
+    "osm_id": 10924124879,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "New Santosh Electronics",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": "D-57, Bhalaswa Dairy",
+    "phone": "+91-97110-58093;+91-72103-25709",
+    "website": null,
+    "osm_id": 10964049318,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Iss relocations",
+    "category": "Logistics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 98919 57371;+971 4 234 8100",
+    "website": "https://iss-relocations.com/",
+    "osm_id": 11042181451,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Vinod Welding Works",
+    "category": "Metal Fabrication",
+    "location": "Delhi NCR",
+    "address": "35, Mukundpur Road",
+    "phone": "+91-95406-92198;+91-98109-81750",
+    "website": null,
+    "osm_id": 11074403798,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Aggarwal Book Depot",
+    "category": "Packaging",
+    "location": "Delhi NCR",
+    "address": "15, Rajan Babu Road, Adarsh Nagar",
+    "phone": "+91-98112-71102;+91-98111-69222",
+    "website": null,
+    "osm_id": 11081567470,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Shri Balaji Steel Works",
+    "category": "Metal Fabrication",
+    "location": "Delhi NCR",
+    "address": "112, Shani Bazar Road",
+    "phone": "+91-92684-88205",
+    "website": null,
+    "osm_id": 11098961143,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Shree G. Aluminium House",
+    "category": "Metal Fabrication",
+    "location": "Delhi NCR",
+    "address": "9;10, Madhu Vihar",
+    "phone": "+91-98188-09363;+91-97188-60866",
+    "website": null,
+    "osm_id": 11113323426,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "SN Aluminium Workshop",
+    "category": "Metal Fabrication",
+    "location": "Delhi NCR",
+    "address": "24, Gali Number 20, Indraprastha Extension",
+    "phone": "+91-98993-54696;+91-8700-791-322",
+    "website": null,
+    "osm_id": 11113323435,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "KBM Electronics",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91-85859-00148",
+    "website": null,
+    "osm_id": 11236691266,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Tirupati Stationers and Toys Shop",
+    "category": "Packaging",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91-98107-15480",
+    "website": null,
+    "osm_id": 11446011879,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Korner Shope",
+    "category": "Packaging",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91-88608-38577;+91-828-787-1750;+91-98717-85721",
+    "website": null,
+    "osm_id": 11446011926,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Hiya Hardware and Locks",
+    "category": "Metal Fabrication",
+    "location": "Delhi NCR",
+    "address": "41, Gali Number 19, IP Extension",
+    "phone": "+91-90694-92000",
+    "website": null,
+    "osm_id": 11563437740,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Shree Radhe Shyam",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91-9911-539-173;+91-83830-98206;+91-92100-57627",
+    "website": null,
+    "osm_id": 11575822563,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Chauhan Aluminum House",
+    "category": "Metal Fabrication",
+    "location": "Delhi NCR",
+    "address": "7, IP Extension",
+    "phone": "+91-98183-70376;+91-98182-14606",
+    "website": null,
+    "osm_id": 11575886684,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Maxwell Logistics Global",
+    "category": "Logistics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 7982479326",
+    "website": "http://www.mxlogisticsglobal.com",
+    "osm_id": 11749887285,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "VRL Logistics Limited",
+    "category": "Logistics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91-96438-20761",
+    "website": "https://www.vrllogistics.com",
+    "osm_id": 11830035758,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "SA Fabricator",
+    "category": "Metal Fabrication",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91-96431-25722;+91-786-298-5786;+91-95402-08217",
+    "website": null,
+    "osm_id": 11837682553,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Khatu Shyam Transport Company",
+    "category": "Logistics",
+    "location": "Delhi NCR",
+    "address": "40",
+    "phone": "+91-96505-83585;+91-72105-40601",
+    "website": null,
+    "osm_id": 11841347578,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Malik Transport Company",
+    "category": "Logistics",
+    "location": "Delhi NCR",
+    "address": "41",
+    "phone": "+91-93195-05192;+91-98992-08235",
+    "website": null,
+    "osm_id": 11841347581,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "GD Mobile Store",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 98705 66514",
+    "website": null,
+    "osm_id": 11843590369,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Nanki Boutique & Fabric",
+    "category": "Textiles",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 98100 12371; +91 99107 07167",
+    "website": null,
+    "osm_id": 11854137632,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "M.S. Trading Co.",
+    "category": "Packaging",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 98111 32115",
+    "website": null,
+    "osm_id": 11878999580,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Krishna Stationary",
+    "category": "Packaging",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 85279 22093",
+    "website": null,
+    "osm_id": 11881217935,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Santosh Traders",
+    "category": "Chemicals",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 98185 56712",
+    "website": null,
+    "osm_id": 11881217953,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Prakash Pustak Bhandar",
+    "category": "Packaging",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 99103 87928",
+    "website": null,
+    "osm_id": 11881217957,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "J.P. Sharma Box",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 97173 20286;+91 98111 81552",
+    "website": null,
+    "osm_id": 11881220672,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Gagan Enterprises",
+    "category": "Metal Fabrication",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 81307 47284",
+    "website": null,
+    "osm_id": 11893681372,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Rastogi Book Depot",
+    "category": "Packaging",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 98106 61829",
+    "website": null,
+    "osm_id": 11896860185,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Bhagwan Dass And Sons",
+    "category": "Metal Fabrication",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 99716 80290",
+    "website": null,
+    "osm_id": 11901174307,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Gard Plywood & Timber",
+    "category": "Metal Fabrication",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+917988595029",
+    "website": null,
+    "osm_id": 11917125125,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Sandisk",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": "mahan expotex it solutions",
+    "phone": "9999052846",
+    "website": null,
+    "osm_id": 11917695056,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Smarttek Enterprises",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 99907 57485",
+    "website": null,
+    "osm_id": 11917721680,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Adaptor Hub",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 96502 18917",
+    "website": null,
+    "osm_id": 11917721682,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "M.K. Cabletronix",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 84489 41913",
+    "website": null,
+    "osm_id": 11917721687,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "SR Computer",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 99107 44215",
+    "website": null,
+    "osm_id": 11917721689,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Discount Cables",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 98183 98057",
+    "website": null,
+    "osm_id": 11917721693,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "R. R. Systems",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": "97",
+    "phone": "+91-98103-36250;+91-98103-17250",
+    "website": null,
+    "osm_id": 11917721694,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Gaming PC Build",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 99905 54145",
+    "website": null,
+    "osm_id": 11917724358,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "NS Electronics",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 99716 88906",
+    "website": null,
+    "osm_id": 11917724361,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Smart Eye Security System",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 88005 26123",
+    "website": null,
+    "osm_id": 11917752927,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Jain Television Services Centre",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 98106 03755",
+    "website": null,
+    "osm_id": 11955856408,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Radiant Valuables Logistics",
+    "category": "Logistics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 73581 35129",
+    "website": null,
+    "osm_id": 11971462062,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "New Dhami Tents And Caterers",
+    "category": "Logistics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 98118 17533",
+    "website": null,
+    "osm_id": 11975076611,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Awagaman Packers And Movers Private Limited",
+    "category": "Logistics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 99996 77678",
+    "website": null,
+    "osm_id": 11975425508,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Amaron",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91-98103-89336",
+    "website": null,
+    "osm_id": 11982456730,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Pal Times",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91-99997-27878",
+    "website": null,
+    "osm_id": 11982456748,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Apex Stationers",
+    "category": "Packaging",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 83838 02099",
+    "website": null,
+    "osm_id": 12091656883,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Punit Xerox Centre",
+    "category": "Packaging",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 99909 30052",
+    "website": null,
+    "osm_id": 12196479681,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Fluid",
+    "category": "Textiles",
+    "location": "Delhi NCR",
+    "address": "104;105",
+    "phone": "+91-99719-58585;+91-11-4102-8585",
+    "website": null,
+    "osm_id": 12208722062,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Voltas",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": "K-81B",
+    "phone": "+91 11 4759 3737",
+    "website": null,
+    "osm_id": 12208824293,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Madan Stamp House",
+    "category": "Packaging",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 98110 46975",
+    "website": null,
+    "osm_id": 12495423291,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Gulani Brothers",
+    "category": "Packaging",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 93121 25847",
+    "website": null,
+    "osm_id": 12495442240,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Sanjay Enterprises",
+    "category": "Packaging",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 96544 71233",
+    "website": null,
+    "osm_id": 12535528836,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Adinath Tools Company",
+    "category": "Metal Fabrication",
+    "location": "Delhi NCR",
+    "address": "4133/109, Gali Shahtara, Ajmeri Gate",
+    "phone": "+91-99115-93124;+91-9899-7777-40",
+    "website": null,
+    "osm_id": 12588445795,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Bhatia Pipe Traders",
+    "category": "Metal Fabrication",
+    "location": "Delhi NCR",
+    "address": "4960, Hauz Kazi Chowk",
+    "phone": "+91 98186 64080",
+    "website": null,
+    "osm_id": 12592701728,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Hindustan Trading Company",
+    "category": "Metal Fabrication",
+    "location": "Delhi NCR",
+    "address": "4957, Hauz Kazi Chowk",
+    "phone": "+91 99998 00416",
+    "website": null,
+    "osm_id": 12592701735,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Ramji Lal Ram Saroop",
+    "category": "Metal Fabrication",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 98100 29274",
+    "website": null,
+    "osm_id": 12592701742,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Sonu Valves Private Limited",
+    "category": "Metal Fabrication",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 87000 01800",
+    "website": null,
+    "osm_id": 12592701749,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Nitin Hardware Store",
+    "category": "Metal Fabrication",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 98739 50255;+91 95992 08742",
+    "website": null,
+    "osm_id": 12592701750,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Kailash And Company",
+    "category": "Metal Fabrication",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 96503 59389",
+    "website": null,
+    "osm_id": 12592716941,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Bansal Hardware Store",
+    "category": "Metal Fabrication",
+    "location": "Delhi NCR",
+    "address": "4136, Gali Shahtara, Ajmeri Gate",
+    "phone": "+91-11-4083-1922;+91-11-4083-1214",
+    "website": null,
+    "osm_id": 12619062897,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Sai Hardware And Electrical Shop",
+    "category": "Metal Fabrication",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 98995 24521;+91-98107-61661",
+    "website": null,
+    "osm_id": 12647128101,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Crescent Shipping Logistics Services",
+    "category": "Logistics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 98718 66004;+91 79826 61513;+91 98114 38428",
+    "website": null,
+    "osm_id": 12647158863,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Wasim Stationers",
+    "category": "Packaging",
+    "location": "Delhi NCR",
+    "address": "249, Gali Number 2, Mandawali Fazalpur",
+    "phone": "+91-70111-94607;+91-999-077-5942",
+    "website": null,
+    "osm_id": 12667236780,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "World Education Services Couriers",
+    "category": "Logistics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 98180 99697;+91 88601 16390;+91 98212 19114;+91 98212 19987",
+    "website": null,
+    "osm_id": 12692544964,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Aluminum and Glass Work",
+    "category": "Metal Fabrication",
+    "location": "Delhi NCR",
+    "address": "285, Buddha Marg, Mandawali",
+    "phone": "+91-98711-80733;+91-99103-68775",
+    "website": null,
+    "osm_id": 12718993223,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Shree Neelkanth Traders, Hardware and Tools",
+    "category": "Metal Fabrication",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91-99714-21274",
+    "website": null,
+    "osm_id": 12739058179,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Deepak Mobile Care",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 92507 00801",
+    "website": null,
+    "osm_id": 12997293709,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Trackon",
+    "category": "Logistics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91-991188-2554",
+    "website": null,
+    "osm_id": 13051853851,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Dwivedi Books and Stationery",
+    "category": "Packaging",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91-96435-72554;+91-98713-82471",
+    "website": null,
+    "osm_id": 13065982892,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Khushi Electricals",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 8588959286",
+    "website": null,
+    "osm_id": 13094387626,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "UB Courier and Cargo",
+    "category": "Logistics",
+    "location": "Delhi NCR",
+    "address": "G-11-A, Okhla Industrial Area, Phase 2",
+    "phone": "+91 95363 20041",
+    "website": "ubcourier.in",
+    "osm_id": 13094395906,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Sumer",
+    "category": "Packaging",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+919354279273",
+    "website": null,
+    "osm_id": 13110159239,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Trade Uno Fabrics",
+    "category": "Textiles",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 8130554637",
+    "website": "https://www.tradeuno.com/",
+    "osm_id": 13176669329,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Jai Mata Di",
+    "category": "Packaging",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 70116 86440",
+    "website": null,
+    "osm_id": 13227582301,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Asian Paints",
+    "category": "Chemicals",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 9999984569",
+    "website": null,
+    "osm_id": 13546472891,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Crossroads",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 93136 24500",
+    "website": null,
+    "osm_id": 13644931627,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Raj Book Seller",
+    "category": "Packaging",
+    "location": "Delhi NCR",
+    "address": "G-62",
+    "phone": "+91 70421 31080;+91 70421 31081",
+    "website": null,
+    "osm_id": 13684861373,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Bhandari",
+    "category": "Packaging",
+    "location": "Delhi NCR",
+    "address": "G-43",
+    "phone": "8882886546",
+    "website": null,
+    "osm_id": 13684861376,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Modern Book Depot",
+    "category": "Packaging",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 98182 40599",
+    "website": null,
+    "osm_id": 13780550380,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Gulati Book Depot",
+    "category": "Packaging",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 8506995757",
+    "website": null,
+    "osm_id": 13814203739,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "King Enterprises",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "9810835648",
+    "website": null,
+    "osm_id": 13814373697,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Robosaki",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": "Rz 66, A Block, Block B, Mahipalpur Extension, Mahipalpur, Road Number 2",
+    "phone": "+91-8920328013",
+    "website": null,
+    "osm_id": 13937724376,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Kumar Lining House",
+    "category": "Textiles",
+    "location": "Delhi NCR",
+    "address": "G-70",
+    "phone": "9810733276",
+    "website": null,
+    "osm_id": 13982741901,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Rama Book Depot",
+    "category": "Packaging",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "9810065145",
+    "website": null,
+    "osm_id": 14041354983,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Saurabh Electronics",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "9811024235",
+    "website": null,
+    "osm_id": 14041377372,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Marvel Vinyls Limited",
+    "category": "Textiles",
+    "location": "Delhi NCR",
+    "address": "G73, Indira Chowk",
+    "phone": "+91 11 4530 6666",
+    "website": null,
+    "osm_id": 14081672727,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Yash Stationers",
+    "category": "Packaging",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 98997 74877",
+    "website": null,
+    "osm_id": 14100954618,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Global Information",
+    "category": "Logistics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 95602 39505",
+    "website": null,
+    "osm_id": 14107314072,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "WeFours",
+    "category": "Packaging",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 99102 12299",
+    "website": null,
+    "osm_id": 14107341404,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Aptronix",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "0804495813",
+    "website": "https://aptronixindia.com",
+    "osm_id": 14150509797,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Maa Santoshi Electricals And Electronics",
+    "category": "Electronics",
+    "location": "Delhi NCR",
+    "address": null,
+    "phone": "+91 99716 33690",
+    "website": null,
+    "osm_id": 14188555473,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Jeevandip Stationery and Varieties",
+    "category": "Packaging",
+    "location": "Pune",
+    "address": "Dhayari Road",
+    "phone": "+919860552521",
+    "website": null,
+    "osm_id": 3679795226,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Namrata Electronics",
+    "category": "Electronics",
+    "location": "Pune",
+    "address": "1st Floor, Sinhagad Road",
+    "phone": "+91 20 3233 8501",
+    "website": null,
+    "osm_id": 4107176016,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Ishika Logistic",
+    "category": "Logistics",
+    "location": "Pune",
+    "address": "Sinhagad Road",
+    "phone": "+919822518303",
+    "website": null,
+    "osm_id": 4204725089,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Swaroop Computers",
+    "category": "Electronics",
+    "location": "Pune",
+    "address": null,
+    "phone": "9890199798",
+    "website": null,
+    "osm_id": 5803624700,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Hettich Application Centre",
+    "category": "Metal Fabrication",
+    "location": "Pune",
+    "address": "Shankarao Gaikwad Path",
+    "phone": "+91 720 847 6557",
+    "website": "https://web.hettich.com",
+    "osm_id": 6135560377,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Crystal Lifestyles",
+    "category": "Electronics",
+    "location": "Pune",
+    "address": "Shankarao Gaikwad Path",
+    "phone": "+91 880 655 5757",
+    "website": null,
+    "osm_id": 6135560378,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Reliance Digital",
+    "category": "Electronics",
+    "location": "Pune",
+    "address": "Balewadi High Street",
+    "phone": "+912029526081",
+    "website": "http://www.reliancedigital.in/",
+    "osm_id": 9401950404,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Ambika Harware",
+    "category": "Metal Fabrication",
+    "location": "Pune",
+    "address": "Uttamnagar road",
+    "phone": "+918983586749",
+    "website": null,
+    "osm_id": 9580332651,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "प्रिन्स हार्डवेअर आणि इलेक्ट्रिकल",
+    "category": "Metal Fabrication",
+    "location": "Pune",
+    "address": null,
+    "phone": "+91 70145 81045",
+    "website": null,
+    "osm_id": 9926235791,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Sree Swamy Electrical",
+    "category": "Electronics",
+    "location": "Pune",
+    "address": "Hingane Internal Road",
+    "phone": "09822701874",
+    "website": null,
+    "osm_id": 10108645154,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "एम के पॉवर सिस्टम",
+    "category": "Electronics",
+    "location": "Pune",
+    "address": "Shop no 3, Datta Mandir Road",
+    "phone": "9970330074; +91 90213 53189",
+    "website": "https://www.mkpowersystem.in/",
+    "osm_id": 10131739217,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Lucky stationery",
+    "category": "Packaging",
+    "location": "Pune",
+    "address": "shop 4, रामभाऊ कलाटे मार्ग",
+    "phone": "+91 83909 80636",
+    "website": null,
+    "osm_id": 11046339394,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Vishal Xerox & Stationery Flex Printing & Led Board",
+    "category": "Packaging",
+    "location": "Pune",
+    "address": null,
+    "phone": "+91 97654 17073",
+    "website": null,
+    "osm_id": 11245293887,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Ram Shyam Hardware",
+    "category": "Metal Fabrication",
+    "location": "Pune",
+    "address": null,
+    "phone": "+91 88058 38880; +91 97677 17216",
+    "website": null,
+    "osm_id": 11368893618,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Unicorn",
+    "category": "Electronics",
+    "location": "Pune",
+    "address": "Jangli Maharaj Path",
+    "phone": "+91 20 6604 0738",
+    "website": null,
+    "osm_id": 11505392603,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Poorvika",
+    "category": "Electronics",
+    "location": "Pune",
+    "address": "Sanghvi Kesari Road",
+    "phone": "+91 994 027 9855",
+    "website": "https://www.poorvika.com",
+    "osm_id": 11561501967,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "AtoZShop",
+    "category": "Metal Fabrication",
+    "location": "Pune",
+    "address": "339,, DULYA MARUTI CHOWK, GANESH PETH",
+    "phone": "+91-9987086693",
+    "website": "https://atozshop.co.in/",
+    "osm_id": 13038677806,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Samsung",
+    "category": "Electronics",
+    "location": "Pune",
+    "address": null,
+    "phone": "+91 82370 09893;+91 82372 64705",
+    "website": null,
+    "osm_id": 13598173647,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Ghansham Electricals",
+    "category": "Electronics",
+    "location": "Pune",
+    "address": null,
+    "phone": "+91 90968 00801",
+    "website": null,
+    "osm_id": 13598173703,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Om Electricals",
+    "category": "Electronics",
+    "location": "Pune",
+    "address": null,
+    "phone": "+91 70382 98855",
+    "website": null,
+    "osm_id": 13767096739,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Vaidya Electricals",
+    "category": "Electronics",
+    "location": "Pune",
+    "address": null,
+    "phone": "+91 93730 47144;+91 91752 77767",
+    "website": null,
+    "osm_id": 13920500326,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Cromā",
+    "category": "Electronics",
+    "location": "Pune",
+    "address": "Gr & Mezzanine Floor, AG Trade Center NDA Pashan Rd",
+    "phone": "+9186579 61898",
+    "website": null,
+    "osm_id": 13980303224,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Metro Stationery",
+    "category": "Packaging",
+    "location": "Pune",
+    "address": "13/2-5, Sagar Co-Operative Housing Society, Bavdhan",
+    "phone": "+91-8624988228",
+    "website": null,
+    "osm_id": 14183060556,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Pragati Hardware And Electricals",
+    "category": "Metal Fabrication",
+    "location": "Pune",
+    "address": "Padamshree Apartment, Pashan Road, NDA Pashan Rd, Bavdhan",
+    "phone": "+91-9766820773",
+    "website": null,
+    "osm_id": 14183061691,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "MATAJI ELECTRICALS AND HOME APPLIANCES",
+    "category": "Electronics",
+    "location": "Pune",
+    "address": "Shop No 2, Padmashree Classic, NDA Rd, Sagar Co-Operative Housing Society, Bavdhan",
+    "phone": "+91-8237503017",
+    "website": null,
+    "osm_id": 14183067282,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Sri Geeta Plywood & Hardware",
+    "category": "Metal Fabrication",
+    "location": "Hyderabad",
+    "address": "5-51, Goods Shed Road, Moosapet",
+    "phone": "9618176425",
+    "website": null,
+    "osm_id": 5470930514,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "SVR Power Controls",
+    "category": "Electronics",
+    "location": "Hyderabad",
+    "address": "Plot No 205, Road No 6",
+    "phone": "+91 9676145931",
+    "website": null,
+    "osm_id": 6570905721,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Thirumala Fabrication Works",
+    "category": "Metal Fabrication",
+    "location": "Hyderabad",
+    "address": "Plot No 240, Road No 7",
+    "phone": "+91 9552594371;+91 9912397120",
+    "website": null,
+    "osm_id": 6571756958,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Khwaja Stationery",
+    "category": "Packaging",
+    "location": "Hyderabad",
+    "address": null,
+    "phone": "+919100373185;",
+    "website": null,
+    "osm_id": 6574777320,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Ganesh Traders",
+    "category": "Chemicals",
+    "location": "Hyderabad",
+    "address": null,
+    "phone": "+91 8019686906",
+    "website": null,
+    "osm_id": 6589713128,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Sharadha Books & Stationary",
+    "category": "Packaging",
+    "location": "Hyderabad",
+    "address": null,
+    "phone": "+91 7732002685",
+    "website": null,
+    "osm_id": 6593421934,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Sri Sai Lakshmi Engineering",
+    "category": "Metal Fabrication",
+    "location": "Hyderabad",
+    "address": null,
+    "phone": "+91 9948753153;+91 9390161016",
+    "website": null,
+    "osm_id": 6593421937,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Sri Sai Keerthi Textiles",
+    "category": "Textiles",
+    "location": "Hyderabad",
+    "address": null,
+    "phone": "+91 7702182072",
+    "website": null,
+    "osm_id": 6593421961,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Bhavani Textiles",
+    "category": "Textiles",
+    "location": "Hyderabad",
+    "address": "2-109",
+    "phone": "+91 9160355181",
+    "website": null,
+    "osm_id": 6629546515,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Sri Kalanjali Boutique",
+    "category": "Textiles",
+    "location": "Hyderabad",
+    "address": null,
+    "phone": "+91 9948878860;+91 8639273105",
+    "website": null,
+    "osm_id": 6629546518,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "C.S. Brothers",
+    "category": "Textiles",
+    "location": "Hyderabad",
+    "address": "9-87/1, Boduppal Road",
+    "phone": "+91 40 27204477",
+    "website": null,
+    "osm_id": 6629546522,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Sri Laxmi Collections",
+    "category": "Textiles",
+    "location": "Hyderabad",
+    "address": null,
+    "phone": "+91 8501002920;+91 8143285669;+91 9666871327",
+    "website": null,
+    "osm_id": 6629546523,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Sri Amarjyothi Traders",
+    "category": "Chemicals",
+    "location": "Hyderabad",
+    "address": null,
+    "phone": "+91 9866022590",
+    "website": null,
+    "osm_id": 6632844429,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Padma's Passion Street",
+    "category": "Packaging",
+    "location": "Hyderabad",
+    "address": "Shop No:- 24&25, Block-3, RBR-Complex, Miyapur, Cine Town Lane",
+    "phone": "09391115373",
+    "website": null,
+    "osm_id": 7863571048,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Sonovision",
+    "category": "Electronics",
+    "location": "Hyderabad",
+    "address": "Sonovision, Punjagutta Junction",
+    "phone": "09246663535",
+    "website": null,
+    "osm_id": 10279266020,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "V3 Electronics",
+    "category": "Electronics",
+    "location": "Hyderabad",
+    "address": "Central Park Road, Kompally",
+    "phone": "+919398869991",
+    "website": "https://www.v3electronics.in/",
+    "osm_id": 10871685669,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Reliance Digital",
+    "category": "Electronics",
+    "location": "Hyderabad",
+    "address": "sy no:1009, lgf,nexus mall, KPHB 9th Phase Road",
+    "phone": "08928933428",
+    "website": "https://www.reliancedigitalstores.in/reliance-digital-electronics-retail-and-repair-shop-balanagar-hyderabad-243296/Home?utm_source=locator&utm_medium=googleplaces",
+    "osm_id": 11358156627,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Samsung",
+    "category": "Electronics",
+    "location": "Hyderabad",
+    "address": "Survey No 8 & 9, 1st Floor,, Kothapet, Saroornagar",
+    "phone": "+ 91 9177303619",
+    "website": null,
+    "osm_id": 11676166203,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "The world Parcel",
+    "category": "Logistics",
+    "location": "Hyderabad",
+    "address": "2-1-565/6/a, Nallakunta Main Road, Nallakunta",
+    "phone": "+91 98490 10989",
+    "website": null,
+    "osm_id": 11716760579,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Tej Kiran Electricals",
+    "category": "Electronics",
+    "location": "Hyderabad",
+    "address": "5-2-270, Hyderbasthi",
+    "phone": "+91 98851 28158",
+    "website": null,
+    "osm_id": 13678000574,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Jagdamba Sales Corporation",
+    "category": "Electronics",
+    "location": "Ahmedabad",
+    "address": "Indira Bridge Circle . Apollo Complex",
+    "phone": "9375776800",
+    "website": null,
+    "osm_id": 4404465899,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Ahmedabad Power Tools",
+    "category": "Electronics",
+    "location": "Ahmedabad",
+    "address": "2",
+    "phone": "7435879662",
+    "website": null,
+    "osm_id": 11787243176,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Safa Collection",
+    "category": "Textiles",
+    "location": "Ahmedabad",
+    "address": "Shop No.6, Ratan Apartment, Keshavnagar, Subhash Bridge, Ahmedabad",
+    "phone": "7874194700",
+    "website": "https://g.page/safacollectionindia",
+    "osm_id": 13302744602,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Tatva Enterprise",
+    "category": "Electronics",
+    "location": "Ahmedabad",
+    "address": "28, Thakkarbapa Nagar Flyover",
+    "phone": "9998691243",
+    "website": "https://www.tatvagroup.net/",
+    "osm_id": 13675036801,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "Jayachandra Bearings Pvt Ltd",
+    "category": "Metal Fabrication",
+    "location": "Coimbatore",
+    "address": "1002, Avinashi Road",
+    "phone": "04224294919",
+    "website": "https://www.jayachandra.in/contactus.html",
+    "osm_id": 4270399789,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  },
+  {
+    "name": "RK Systems",
+    "category": "Electronics",
+    "location": "Coimbatore",
+    "address": "1/150a, Nachi Angannan Thevar Street",
+    "phone": "9524334600",
+    "website": null,
+    "osm_id": 4338401492,
+    "source": "OpenStreetMap (openstreetmap.org), ODbL"
+  }
+]

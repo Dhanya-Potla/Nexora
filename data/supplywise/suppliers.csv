@@ -1,0 +1,31 @@
+supplier_id,name,category,location,address,phone,website,data_source,avg_lead_time_days,defect_rate,on_time_delivery_rate,years_active
+SUP-001,Adishwar India Limited,Electronics,Bengaluru,"No 14, 10th, Vidhya Vardhaka Sangha Road",080-41610910,https://www.adishwarestore.com/,"OpenStreetMap (openstreetmap.org), ODbL",7,0.051,0.76,4
+SUP-002,Amar Radio Corporation,Electronics,Bengaluru,"134-138, K K, Sadar Patrappa Road",08046480000,https://www.amarradio.com/,"OpenStreetMap (openstreetmap.org), ODbL",14,0.053,0.76,15
+SUP-003,Aptronix,Electronics,Delhi NCR,"Delhi NCR, India",0804495813,https://aptronixindia.com,"OpenStreetMap (openstreetmap.org), ODbL",4,0.018,1.0,11
+SUP-004,Asus / Dell Service Center,Electronics,Bengaluru,"53-58, 3rd Floor, Chakravarthi Complex, Sajjan Rao Circle",00918041205444,http://www.regenersis.in,"OpenStreetMap (openstreetmap.org), ODbL",18,0.095,0.63,14
+SUP-005,Cromā,Electronics,Bengaluru,"LG-34, Sampige Road",+917207666000,https://www.croma.com/,"OpenStreetMap (openstreetmap.org), ODbL",3,0.005,0.98,3
+SUP-006,AtoZShop,Metal Fabrication,Pune,"339,, DULYA MARUTI CHOWK, GANESH PETH",+91-9987086693,https://atozshop.co.in/,"OpenStreetMap (openstreetmap.org), ODbL",9,0.055,0.86,10
+SUP-007,Basaveshwara Glass And Plywoods,Metal Fabrication,Bengaluru,"mathru Sree Orchid Homes, 4, Kempapura Main Rd, Kempapura, Bellandur,",+91 8065667444,https://business.google.com/,"OpenStreetMap (openstreetmap.org), ODbL",10,0.04,0.84,9
+SUP-008,Hettich Application Centre,Metal Fabrication,Pune,Shankarao Gaikwad Path,+91 720 847 6557,https://web.hettich.com,"OpenStreetMap (openstreetmap.org), ODbL",4,0.014,0.97,1
+SUP-009,Jayachandra Bearings Pvt Ltd,Metal Fabrication,Coimbatore,"1002, Avinashi Road",04224294919,https://www.jayachandra.in/contactus.html,"OpenStreetMap (openstreetmap.org), ODbL",7,0.059,0.87,13
+SUP-010,Adinath Tools Company,Metal Fabrication,Delhi NCR,"4133/109, Gali Shahtara, Ajmeri Gate",+91-99115-93124;+91-9899-7777-40,,"OpenStreetMap (openstreetmap.org), ODbL",4,0.019,0.94,7
+SUP-011,Empire Mart,Packaging,Delhi NCR,95,+91-11-2642-7231;+91-11-2628-7211;+91-2628-7212;+91-98112-42587,https://empiremart.in/,"OpenStreetMap (openstreetmap.org), ODbL",9,0.056,0.8,9
+SUP-012,New Delhi Stationery Mart,Packaging,Delhi NCR,9,+91-11-4455-6677,https://jainbookagency.com,"OpenStreetMap (openstreetmap.org), ODbL",12,0.14,0.61,11
+SUP-013,Wiliam Penn,Packaging,Bengaluru,"Ashok Nagar, 15 Magrath Road",08041127993,https://www.williampenn.net/,"OpenStreetMap (openstreetmap.org), ODbL",11,0.028,0.75,2
+SUP-014,Achiever's,Packaging,Delhi NCR,"Delhi NCR, India",+91-11-4914-9769,,"OpenStreetMap (openstreetmap.org), ODbL",4,0.008,0.97,8
+SUP-015,Aggarwal Book Depot,Packaging,Delhi NCR,"15, Rajan Babu Road, Adarsh Nagar",+91-98112-71102;+91-98111-69222,,"OpenStreetMap (openstreetmap.org), ODbL",10,0.052,0.76,6
+SUP-016,Safa Collection,Textiles,Ahmedabad,"Shop No.6, Ratan Apartment, Keshavnagar, Subhash Bridge, Ahmedabad",7874194700,https://g.page/safacollectionindia,"OpenStreetMap (openstreetmap.org), ODbL",13,0.04,0.84,13
+SUP-017,Trade Uno Fabrics,Textiles,Delhi NCR,"Delhi NCR, India",+91 8130554637,https://www.tradeuno.com/,"OpenStreetMap (openstreetmap.org), ODbL",12,0.079,0.46,4
+SUP-018,Bhavani Textiles,Textiles,Hyderabad,2-109,+91 9160355181,,"OpenStreetMap (openstreetmap.org), ODbL",12,0.023,0.77,13
+SUP-019,C.S. Brothers,Textiles,Hyderabad,"9-87/1, Boduppal Road",+91 40 27204477,,"OpenStreetMap (openstreetmap.org), ODbL",12,0.032,0.88,1
+SUP-020,Fluid,Textiles,Delhi NCR,104;105,+91-99719-58585;+91-11-4102-8585,,"OpenStreetMap (openstreetmap.org), ODbL",25,0.101,0.54,6
+SUP-021,DTDC,Logistics,Delhi NCR,"Delhi NCR, India",+91-93505-51135,https://www.dtdc.com,"OpenStreetMap (openstreetmap.org), ODbL",8,0.024,0.81,15
+SUP-022,Iss relocations,Logistics,Bengaluru,"Bengaluru, India",+91 81239 56569;+971 4 234 8100,https://iss-relocations.com/,"OpenStreetMap (openstreetmap.org), ODbL",3,0.014,0.91,15
+SUP-023,Maxwell Logistics Global,Logistics,Delhi NCR,"Delhi NCR, India",+91 7982479326,http://www.mxlogisticsglobal.com,"OpenStreetMap (openstreetmap.org), ODbL",6,0.012,0.95,7
+SUP-024,ST Courier,Logistics,Chennai,MKN Road,+91 9551785177,https://stcourier.com/,"OpenStreetMap (openstreetmap.org), ODbL",3,0.006,0.98,13
+SUP-025,UB Courier and Cargo,Logistics,Delhi NCR,"G-11-A, Okhla Industrial Area, Phase 2",+91 95363 20041,ubcourier.in,"OpenStreetMap (openstreetmap.org), ODbL",5,0.019,0.93,11
+SUP-026,Asian Paints,Chemicals,Delhi NCR,"Delhi NCR, India",+91 9999984569,,"OpenStreetMap (openstreetmap.org), ODbL",14,0.047,0.82,15
+SUP-027,"Dharam Sanitary, Paints, Hardware and Electrical House",Chemicals,Delhi NCR,"Delhi NCR, India",+91 99537 91856,,"OpenStreetMap (openstreetmap.org), ODbL",11,0.031,0.8,3
+SUP-028,Ganesh Traders,Chemicals,Hyderabad,"Hyderabad, India",+91 8019686906,,"OpenStreetMap (openstreetmap.org), ODbL",9,0.03,0.75,5
+SUP-029,Raseela Paints,Chemicals,Delhi NCR,"Delhi NCR, India",+91 99530 70616;+91-93122-55557,,"OpenStreetMap (openstreetmap.org), ODbL",11,0.041,0.78,8
+SUP-030,Santosh Traders,Chemicals,Delhi NCR,"Delhi NCR, India",+91 98185 56712,,"OpenStreetMap (openstreetmap.org), ODbL",3,0.007,0.93,2

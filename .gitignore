@@ -38,3 +38,24 @@ Thumbs.db
 
 # Test files
 test_*.py
+
+# Excel exports and test files
+*.xlsx
+export_test.xlsx
+template_test.xlsx
+
+# Generated images and screenshots
+*.png
+!architecture_diagram.png
+!SupplyWise_System_Architecture.png
+!SupplyWise_Literature_Survey.png
+
+# Generated presentations (keep only the professional one)
+NEXORA_Presentation.pptx
+SupplyWise_Project_Presentation.pptx
+
+# Graph output
+graphify-out/
+
+# Claude skills (local only)
+.claude/

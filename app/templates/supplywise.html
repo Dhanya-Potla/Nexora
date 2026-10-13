@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SupplyWise</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0a;
+    --text: #fff;
+    --muted: rgba(255,255,255,0.55);
+    --border: rgba(255,255,255,0.1);
+    --card-bg: rgba(255,255,255,0.04);
+    --card-bg-hover: rgba(255,255,255,0.07);
+    --accent: #4a90e2;
+    --low: #35c46a;
+    --med: #e2b34a;
+    --high: #e25a4a;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; }
+  .container { max-width: 1280px; margin: 0 auto; padding: 28px 24px 60px; }
+  .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 22px; border-bottom: 1px solid var(--border); padding-bottom: 16px; }
+  .header h1 { font-size: 21px; font-weight: 700; }
+  .header .sub { color: var(--muted); font-size: 12px; margin-top: 2px; }
+  .header a { color: var(--muted); text-decoration: none; font-size: 14px; }
+
+  .tabs { display: flex; gap: 4px; margin-bottom: 24px; border-bottom: 1px solid var(--border); }
+  .tab { padding: 10px 16px; cursor: pointer; color: var(--muted); font-size: 13px; font-weight: 600; border-bottom: 2px solid transparent; transition: all 0.15s; }
+  .tab:hover { color: var(--text); }
+  .tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .view { display: none; }
+  .view.active { display: block; }
+
+  .kpi-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 20px; }
+  .kpi-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 18px; }
+  .kpi-card .label { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; }
+  .kpi-card .value { font-size: 26px; font-weight: 700; margin-top: 6px; }
+
+  .chart-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+  .panel { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-bottom: 20px; }
+  .panel h2 { font-size: 14px; margin-bottom: 14px; font-weight: 600; }
+  .panel h2 .hint { color: var(--muted); font-weight: 400; font-size: 12px; margin-left: 8px; }
+  .chart-wrap { position: relative; height: 220px; }
+
+  .risk-badge { padding: 3px 10px; border-radius: 20px; font-size: 12px; font-weight: 600; display: inline-block; white-space: nowrap; }
+  .risk-Low { background: rgba(53,196,106,0.15); color: var(--low); }
+  .risk-Medium { background: rgba(226,179,74,0.15); color: var(--med); }
+  .risk-High { background: rgba(226,90,74,0.15); color: var(--high); }
+
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); }
+  th { color: var(--muted); font-weight: 600; text-transform: uppercase; font-size: 10.5px; letter-spacing: 0.04em; }
+  tr.supplier-row { cursor: pointer; }
+  tr.supplier-row:hover { background: var(--card-bg-hover); }
+  tr.reason-row td { background: rgba(255,255,255,0.02); padding: 12px 16px; }
+  tr.reason-row ul { margin-left: 18px; color: var(--muted); font-size: 12.5px; line-height: 1.6; }
+  tr.reason-row .addr { margin-top: 8px; color: var(--muted); font-size: 12px; }
+  tr.reason-row .addr a { color: var(--accent); }
+  .contact-link { color: var(--accent); text-decoration: none; font-weight: 600; white-space: nowrap; }
+  .contact-link:hover { text-decoration: underline; }
+  .hidden { display: none; }
+
+  .filter-row { display: flex; gap: 10px; margin-bottom: 16px; flex-wrap: wrap; }
+  .filter-row select, .filter-row input { background: rgba(255,255,255,0.05); border: 1px solid var(--border); color: var(--text); padding: 8px 12px; border-radius: 8px; font-size: 13px; }
+  .filter-row select option { background: #1a1a1a; color: var(--text); padding: 8px; }
+  .filter-row input { flex: 1; min-width: 180px; }
+
+  .chat-box, .search-box { display: flex; gap: 10px; margin-bottom: 14px; }
+  .chat-box input, .search-box input { flex: 1; background: rgba(255,255,255,0.05); border: 1px solid var(--border); color: var(--text); padding: 10px 14px; border-radius: 8px; font-size: 14px; }
+  .chat-box button, .search-box button, .compare-box button { background: var(--accent); color: #fff; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: 600; }
+  .chat-box button:disabled, .search-box button:disabled { opacity: 0.5; cursor: not-allowed; }
+  #answer { white-space: pre-wrap; line-height: 1.5; font-size: 14px; min-height: 24px; }
+  .sources { margin-top: 10px; color: var(--muted); font-size: 12px; }
+  .loading { color: var(--muted); font-style: italic; }
+  .example-chips { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; }
+  .chip { background: rgba(255,255,255,0.05); border: 1px solid var(--border); color: var(--muted); padding: 5px 12px; border-radius: 20px; font-size: 12px; cursor: pointer; }
+  .chip:hover { color: var(--text); border-color: var(--accent); }
+
+  .match-card { background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center; }
+  .match-card .name { font-weight: 600; font-size: 14px; }
+  .match-card .meta { color: var(--muted); font-size: 12px; margin-top: 3px; }
+  .match-score { text-align: right; }
+  .match-score .pct { font-size: 18px; font-weight: 700; color: var(--accent); }
+  .match-score .label { font-size: 11px; color: var(--muted); }
+
+  .compare-box { display: flex; gap: 10px; margin-bottom: 20px; align-items: center; }
+  .compare-box select { flex: 1; background: rgba(255,255,255,0.05); border: 1px solid var(--border); color: var(--text); padding: 10px 12px; border-radius: 8px; font-size: 13px; }
+  .compare-box select option { background: #1a1a1a; color: var(--text); padding: 8px; }
+  .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .compare-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+  .compare-card h3 { font-size: 16px; margin-bottom: 4px; }
+  .compare-card .cat { color: var(--muted); font-size: 12px; margin-bottom: 14px; }
+  .compare-metric { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px; }
+  .compare-metric .k { color: var(--muted); }
+  .compare-card ul { margin: 12px 0 0 18px; font-size: 12.5px; color: var(--muted); line-height: 1.6; }
+  
+  .product-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; transition: all 0.2s; cursor: pointer; }
+  .product-card:hover { background: var(--card-bg-hover); transform: translateY(-2px); }
+  .product-img { width: 100%; height: 180px; object-fit: cover; background: rgba(255,255,255,0.03); }
+  .product-body { padding: 16px; }
+  .product-card h3 { font-size: 14px; margin-bottom: 4px; font-weight: 600; }
+  .product-card .cat { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 8px; }
+  .product-card .price { font-size: 18px; font-weight: 700; color: var(--accent); margin-bottom: 6px; }
+  .product-card .desc { font-size: 12px; color: var(--muted); line-height: 1.5; }
+  
+  .winner-badge { background: rgba(53,196,106,0.15); color: var(--low); padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 700; margin-left: 6px; }
+  .recommendation-box { background: rgba(74,144,226,0.08); border: 1px solid rgba(74,144,226,0.3); padding: 16px; border-radius: 10px; margin-top: 20px; }
+  .recommendation-box h3 { font-size: 15px; margin-bottom: 10px; color: var(--accent); }
+  .recommendation-box p { font-size: 13px; color: var(--text); line-height: 1.6; }
+  .metric-comparison { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; margin-top: 20px; }
+  .metric-card { background: rgba(255,255,255,0.03); border: 1px solid var(--border); padding: 14px; border-radius: 10px; }
+  .metric-card .metric-name { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 8px; }
+  .metric-card .metric-values { display: flex; justify-content: space-between; align-items: center; font-size: 14px; }
+  .metric-card .winner-val { font-weight: 700; color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div>
+      <h1>📦 SupplyWise — Procurement Intelligence</h1>
+      <div class="sub">RAG + Knowledge-grounded risk scoring for supplier &amp; procurement decisions</div>
+    </div>
+    <a href="/">← Back to Nexora</a>
+  </div>
+
+  <div class="tabs">
+    <div class="tab active" data-view="overview">Overview</div>
+    <div class="tab" data-view="suppliers">Suppliers &amp; Risk</div>
+    <div class="tab" data-view="products">Products</div>
+    <div class="tab" data-view="find">Find Suppliers</div>
+    <div class="tab" data-view="compare">Compare</div>
+    <div class="tab" data-view="excel">Excel Tools</div>
+    <div class="tab" data-view="ask">Ask AI</div>
+  </div>
+
+  <!-- OVERVIEW -->
+  <div class="view active" id="view-overview">
+    <div class="panel" style="border-color:rgba(74,144,226,0.35);background:rgba(74,144,226,0.06);">
+      <h2 style="margin-bottom:8px;">The problem this solves</h2>
+      <div style="font-size:13px;color:var(--muted);line-height:1.6;">
+        Nearly <strong style="color:var(--text)">80% of procurement executives</strong> say the top blocker to catching supplier
+        risk in time is <strong style="color:var(--text)">lack of visibility</strong> — the data exists, but it's scattered across
+        spreadsheets and systems and isn't fast to query or explain (2025 supply chain risk surveys, Xeneta / Sphera).
+        SupplyWise closes that gap: ask a question in plain English, get an explainable risk answer, and get the
+        supplier's real phone number in the same step — instead of three separate lookups.
+      </div>
+    </div>
+    <div class="kpi-row" id="kpi-row"></div>
+    <div class="chart-row">
+      <div class="panel">
+        <h2>Risk Distribution</h2>
+        <div class="chart-wrap"><canvas id="riskChart"></canvas></div>
+      </div>
+      <div class="panel">
+        <h2>What Drives the Risk Score <span class="hint">ML feature importance</span></h2>
+        <div class="chart-wrap"><canvas id="featureChart"></canvas></div>
+      </div>
+    </div>
+    <div class="panel">
+      <h2>Performance by Category <span class="hint">avg defect rate & on-time rate</span></h2>
+      <div class="chart-wrap" style="height:260px"><canvas id="categoryChart"></canvas></div>
+    </div>
+  </div>
+
+  <!-- SUPPLIERS -->
+  <div class="view" id="view-suppliers">
+    <div class="panel">
+      <div style="color:var(--muted);font-size:12px;margin-bottom:14px;">
+        Supplier identity, address &amp; phone are real records from OpenStreetMap (openstreetmap.org, ODbL) —
+        performance metrics are modeled from order history. See "Data Sourcing &amp; Methodology" via Ask AI for details.
+      </div>
+      <div class="filter-row">
+        <input id="supplier-filter" type="text" placeholder="Search by supplier name..." oninput="renderSuppliers()" />
+        <select id="category-filter" onchange="renderSuppliers()"><option value="">All Categories</option></select>
+        <select id="risk-filter" onchange="renderSuppliers()">
+          <option value="">All Risk Levels</option>
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+        <select id="location-filter" onchange="renderSuppliers()"><option value="">All Locations</option></select>
+        <input id="min-ontime-filter" type="number" placeholder="Min On-Time %" min="0" max="100" oninput="renderSuppliers()" style="max-width:140px" />
+      </div>
+      <table>
+        <thead>
+          <tr><th></th><th>Supplier</th><th>Category</th><th>Location</th><th>Contact</th><th>Lead Time</th><th>Defect Rate</th><th>On-Time %</th><th>Orders</th><th>Risk</th></tr>
+        </thead>
+        <tbody id="supplier-rows"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- PRODUCTS -->
+  <div class="view" id="view-products">
+    <div class="panel">
+      <h2>Product Catalog <span class="hint" id="product-count">0 products</span></h2>
+      <div class="filter-row">
+        <input id="product-search" type="text" placeholder="Search products by name or description..." oninput="renderProducts()" />
+        <select id="product-category-filter" onchange="renderProducts()">
+          <option value="">All Categories</option>
+        </select>
+      </div>
+      <div id="products-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-top:16px;"></div>
+    </div>
+  </div>
+
+  <!-- FIND SUPPLIERS (semantic search) -->
+  <div class="view" id="view-find">
+    <div class="panel">
+      <h2>Describe what you need <span class="hint">semantic match — no exact keywords required</span></h2>
+      <div class="example-chips">
+        <div class="chip" onclick="runSearch('a reliable supplier for circuit boards with low defects')">low-defect circuit board supplier</div>
+        <div class="chip" onclick="runSearch('cheap steel bracket manufacturer even if slower delivery')">steel bracket, price over speed</div>
+        <div class="chip" onclick="runSearch('fast cold chain logistics partner')">cold chain logistics</div>
+      </div>
+      <div class="search-box">
+        <input id="search-input" type="text" placeholder="e.g. I need a packaging supplier that can handle large volume with good reliability" />
+        <button id="search-btn" onclick="runSearchFromInput()">Search</button>
+      </div>
+      <div id="search-results"></div>
+    </div>
+  </div>
+
+  <!-- COMPARE -->
+  <div class="view" id="view-compare">
+    <div class="panel">
+      <h2>Compare Suppliers Side-by-Side</h2>
+      <div style="color:var(--muted);font-size:12px;margin-bottom:14px;">
+        Select 2-3 suppliers to compare performance metrics, risk levels, and get recommendations
+      </div>
+      <div style="display:flex;gap:10px;align-items:center;margin-bottom:20px;flex-wrap:wrap;">
+        <select id="compare-a" style="flex:1;min-width:200px;background:rgba(255,255,255,0.05);border:1px solid var(--border);color:var(--text);padding:10px;border-radius:8px;"></select>
+        <span style="color:var(--muted);font-weight:600;">vs</span>
+        <select id="compare-b" style="flex:1;min-width:200px;background:rgba(255,255,255,0.05);border:1px solid var(--border);color:var(--text);padding:10px;border-radius:8px;"></select>
+        <select id="compare-c" style="flex:1;min-width:200px;background:rgba(255,255,255,0.05);border:1px solid var(--border);color:var(--text);padding:10px;border-radius:8px;">
+          <option value="" style="background:#1a1a1a;color:var(--text);">(Optional 3rd)</option>
+        </select>
+        <button onclick="runCompareMulti()" style="background:var(--accent);color:#fff;border:none;padding:10px 24px;border-radius:8px;cursor:pointer;font-weight:600;">Compare</button>
+      </div>
+      <div id="compare-result-new"></div>
+    </div>
+  </div>
+
+  <!-- EXCEL TOOLS -->
+  <div class="view" id="view-excel">
+    <div class="panel">
+      <h2>📊 Excel Import/Export Tools</h2>
+      <div style="color:var(--muted);font-size:13px;margin-bottom:20px;">
+        Export suppliers to Excel with color-coded risk levels, or download a template to import new suppliers.
+      </div>
+      
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px;">
+        <div style="background:rgba(255,255,255,0.03);padding:20px;border-radius:10px;border:1px solid var(--border);">
+          <h3 style="font-size:15px;margin-bottom:10px;">📥 Export Suppliers</h3>
+          <p style="color:var(--muted);font-size:12px;margin-bottom:14px;">
+            Download all suppliers to Excel with professional formatting:
+          </p>
+          <ul style="color:var(--muted);font-size:12px;margin-left:18px;margin-bottom:14px;line-height:1.6;">
+            <li>Color-coded by risk level</li>
+            <li>Summary statistics</li>
+            <li>Ready for presentations</li>
+          </ul>
+          <button onclick="exportToExcel()" style="background:var(--accent);color:#fff;border:none;padding:10px 20px;border-radius:8px;cursor:pointer;width:100%;font-weight:600;">
+            Download Excel Export
+          </button>
+        </div>
+        
+        <div style="background:rgba(255,255,255,0.03);padding:20px;border-radius:10px;border:1px solid var(--border);">
+          <h3 style="font-size:15px;margin-bottom:10px;">📋 Download Template</h3>
+          <p style="color:var(--muted);font-size:12px;margin-bottom:14px;">
+            Get Excel template for importing new suppliers:
+          </p>
+          <ul style="color:var(--muted);font-size:12px;margin-left:18px;margin-bottom:14px;line-height:1.6;">
+            <li>Pre-formatted columns</li>
+            <li>Example data included</li>
+            <li>Validation rules</li>
+          </ul>
+          <button onclick="downloadTemplate()" style="background:#35c46a;color:#fff;border:none;padding:10px 20px;border-radius:8px;cursor:pointer;width:100%;font-weight:600;">
+            Download Template
+          </button>
+        </div>
+      </div>
+      
+      <div style="background:rgba(74,144,226,0.06);border:1px solid rgba(74,144,226,0.35);padding:16px;border-radius:10px;margin-top:16px;">
+        <div style="font-size:12px;color:var(--muted);">
+          <strong style="color:var(--text);">Note:</strong> Upload functionality requires backend file handling. Use the downloaded template and send to your procurement team, or contact IT to enable upload features.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ASK AI -->
+  <div class="view" id="view-ask">
+    <div class="panel">
+      <h2>Ask a procurement question</h2>
+      <div class="chat-box">
+        <input id="query-input" type="text" placeholder="e.g. Which suppliers are high risk? What's Vertex Components' defect rate?" />
+        <button id="ask-btn" onclick="askQuestion()">Ask</button>
+      </div>
+      <div id="answer"></div>
+      <div class="sources" id="sources"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+let dashboardData = null;
+let riskChart, featureChart, categoryChart;
+
+// ---- Tabs ----
+document.querySelectorAll('.tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById('view-' + tab.dataset.view).classList.add('active');
+  });
+});
+
+const RISK_COLORS = { Low: '#35c46a', Medium: '#e2b34a', High: '#e25a4a' };
+
+async function loadDashboard() {
+  const res = await fetch('/supplywise/dashboard');
+  dashboardData = await res.json();
+
+  const d = dashboardData;
+  document.getElementById('kpi-row').innerHTML = `
+    <div class="kpi-card"><div class="label">Total Suppliers</div><div class="value">${d.total_suppliers}</div></div>
+    <div class="kpi-card"><div class="label">Total Orders</div><div class="value">${d.total_orders}</div></div>
+    <div class="kpi-card"><div class="label">Avg Lead Time</div><div class="value">${d.avg_lead_time_days}d</div></div>
+    <div class="kpi-card"><div class="label">Avg On-Time Rate</div><div class="value">${d.avg_on_time_rate}%</div></div>
+  `;
+
+  // Risk distribution donut
+  const riskLabels = Object.keys(d.risk_distribution);
+  riskChart = new Chart(document.getElementById('riskChart'), {
+    type: 'doughnut',
+    data: {
+      labels: riskLabels,
+      datasets: [{ data: riskLabels.map(k => d.risk_distribution[k]), backgroundColor: riskLabels.map(k => RISK_COLORS[k]), borderWidth: 0 }]
+    },
+    options: { plugins: { legend: { position: 'bottom', labels: { color: '#fff' } } }, maintainAspectRatio: false }
+  });
+
+  // Feature importance
+  const feats = Object.entries(d.feature_importance).sort((a,b) => b[1]-a[1]);
+  featureChart = new Chart(document.getElementById('featureChart'), {
+    type: 'bar',
+    data: {
+      labels: feats.map(f => f[0].replace(/_/g,' ')),
+      datasets: [{ data: feats.map(f => f[1]), backgroundColor: '#4a90e2' }]
+    },
+    options: {
+      indexAxis: 'y',
+      plugins: { legend: { display: false } },
+      scales: { x: { ticks: { color: '#aaa' }, grid: { color: 'rgba(255,255,255,0.05)' } }, y: { ticks: { color: '#aaa' }, grid: { display: false } } },
+      maintainAspectRatio: false
+    }
+  });
+
+  // Category performance
+  const cats = d.category_breakdown;
+  categoryChart = new Chart(document.getElementById('categoryChart'), {
+    type: 'bar',
+    data: {
+      labels: cats.map(c => c.category),
+      datasets: [
+        { label: 'Avg Defect Rate %', data: cats.map(c => (c.avg_defect_rate*100).toFixed(1)), backgroundColor: '#e25a4a' },
+        { label: 'Avg On-Time Rate %', data: cats.map(c => (c.avg_on_time_rate*100).toFixed(1)), backgroundColor: '#4a90e2' },
+      ]
+    },
+    options: {
+      plugins: { legend: { labels: { color: '#fff' } } },
+      scales: { x: { ticks: { color: '#aaa' }, grid: { display: false } }, y: { ticks: { color: '#aaa' }, grid: { color: 'rgba(255,255,255,0.05)' } } },
+      maintainAspectRatio: false
+    }
+  });
+
+  // Populate category filter + compare dropdowns
+  const catFilter = document.getElementById('category-filter');
+  const locFilter = document.getElementById('location-filter');
+  [...new Set(d.suppliers.map(s => s.category))].sort().forEach(c => {
+    const opt = document.createElement('option');
+    opt.value = c;
+    opt.textContent = c;
+    opt.style.background = '#1a1a1a';
+    opt.style.color = '#fff';
+    catFilter.appendChild(opt);
+  });
+  [...new Set(d.suppliers.map(s => s.location))].sort().forEach(loc => {
+    const opt = document.createElement('option');
+    opt.value = loc;
+    opt.textContent = loc;
+    opt.style.background = '#1a1a1a';
+    opt.style.color = '#fff';
+    locFilter.appendChild(opt);
+  });
+  
+  // Populate compare dropdowns with styled options
+  const compareAOptions = d.suppliers.map(s => {
+    const opt = document.createElement('option');
+    opt.value = s.name;
+    opt.textContent = s.name;
+    opt.style.background = '#1a1a1a';
+    opt.style.color = '#fff';
+    return opt.outerHTML;
+  }).join('');
+  
+  document.getElementById('compare-a').innerHTML = compareAOptions;
+  document.getElementById('compare-b').innerHTML = compareAOptions;
+  document.getElementById('compare-c').innerHTML = '<option value="" style="background:#1a1a1a;color:#fff;">(Optional 3rd)</option>' + compareAOptions;
+  document.getElementById('compare-b').selectedIndex = Math.min(1, d.suppliers.length - 1);
+
+  renderSuppliers();
+  loadProducts();
+}
+
+function renderSuppliers() {
+  const nameFilter = document.getElementById('supplier-filter').value.toLowerCase();
+  const catFilter = document.getElementById('category-filter').value;
+  const riskFilter = document.getElementById('risk-filter').value;
+  const locFilter = document.getElementById('location-filter').value;
+  const minOnTime = parseFloat(document.getElementById('min-ontime-filter').value) || 0;
+
+  const rows = document.getElementById('supplier-rows');
+  rows.innerHTML = '';
+  dashboardData.suppliers
+    .filter(s => s.name.toLowerCase().includes(nameFilter))
+    .filter(s => !catFilter || s.category === catFilter)
+    .filter(s => !riskFilter || s.risk_level === riskFilter)
+    .filter(s => !locFilter || s.location.includes(locFilter))
+    .filter(s => (s.on_time_delivery_rate * 100) >= minOnTime)
+    .forEach((s, i) => {
+      const rowId = 'reason-' + i;
+      rows.innerHTML += `
+        <tr class="supplier-row" onclick="toggleReason('${rowId}')">
+          <td>▸</td>
+          <td>${s.name}</td>
+          <td>${s.category}</td>
+          <td>${s.location}</td>
+          <td><a class="contact-link" href="tel:${s.phone}" onclick="event.stopPropagation()">${s.phone}</a></td>
+          <td>${s.avg_lead_time_days}d</td>
+          <td>${(s.defect_rate * 100).toFixed(1)}%</td>
+          <td>${(s.on_time_delivery_rate * 100).toFixed(0)}%</td>
+          <td>${s.total_orders}</td>
+          <td><span class="risk-badge risk-${s.risk_level}">${s.risk_level}</span></td>
+        </tr>
+        <tr class="reason-row hidden" id="${rowId}">
+          <td colspan="10">
+            <strong>Why this risk level:</strong><ul>${s.risk_reasons.map(r => `<li>${r}</li>`).join('')}</ul>
+            <div class="addr">${s.address || ''}${s.website ? ' · <a href="' + s.website + '" target="_blank" rel="noopener">' + s.website + '</a>' : ''}</div>
+          </td>
+        </tr>
+      `;
+    });
+}
+
+function toggleReason(id) {
+  document.getElementById(id).classList.toggle('hidden');
+}
+
+// ---- Semantic search ----
+function runSearchFromInput() {
+  const q = document.getElementById('search-input').value.trim();
+  if (q) runSearch(q);
+}
+
+async function runSearch(query) {
+  document.getElementById('search-input').value = query;
+  const resultsEl = document.getElementById('search-results');
+  resultsEl.innerHTML = '<span class="loading">Searching...</span>';
+  const res = await fetch('/supplywise/search?q=' + encodeURIComponent(query));
+  const data = await res.json();
+  resultsEl.innerHTML = data.results.map(r => `
+    <div class="match-card">
+      <div>
+        <div class="name">${r.name} <span class="risk-badge risk-${r.risk_level}">${r.risk_level}</span></div>
+        <div class="meta">${r.category} · ${r.location} · lead time ${r.avg_lead_time_days}d · defect ${(r.defect_rate*100).toFixed(1)}% · on-time ${(r.on_time_delivery_rate*100).toFixed(0)}%</div>
+        <div class="meta">📞 <a class="contact-link" href="tel:${r.phone}">${r.phone}</a>${r.website ? ' · <a class="contact-link" href="' + r.website + '" target="_blank" rel="noopener">website</a>' : ''}</div>
+      </div>
+      <div class="match-score"><div class="pct">${r.match_score}%</div><div class="label">match</div></div>
+    </div>
+  `).join('');
+}
+
+// ---- Compare ----
+async function runCompare() {
+  const a = document.getElementById('compare-a').value;
+  const b = document.getElementById('compare-b').value;
+  const res = await fetch(`/supplywise/compare?a=${encodeURIComponent(a)}&b=${encodeURIComponent(b)}`);
+  const data = await res.json();
+  const resultEl = document.getElementById('compare-result');
+  resultEl.innerHTML = [data.a, data.b].map(s => {
+    if (!s) return '<div class="compare-card">Not found</div>';
+    return `
+      <div class="compare-card">
+        <h3>${s.name} <span class="risk-badge risk-${s.risk_level}">${s.risk_level}</span></h3>
+        <div class="cat">${s.category} · ${s.location}</div>
+        <div class="compare-metric"><span class="k">Contact</span><span><a class="contact-link" href="tel:${s.phone}">${s.phone}</a></span></div>
+        <div class="compare-metric"><span class="k">On-time delivery</span><span>${(s.on_time_delivery_rate*100).toFixed(0)}%</span></div>
+        <div class="compare-metric"><span class="k">Defect rate</span><span>${(s.defect_rate*100).toFixed(1)}%</span></div>
+        <div class="compare-metric"><span class="k">Avg lead time</span><span>${s.avg_lead_time_days}d</span></div>
+        <div class="compare-metric"><span class="k">Total orders</span><span>${s.total_orders}</span></div>
+        <div class="compare-metric"><span class="k">Avg delay</span><span>${s.avg_delay_days.toFixed(1)}d</span></div>
+        <ul>${s.risk_reasons.map(r => `<li>${r}</li>`).join('')}</ul>
+      </div>
+    `;
+  }).join('');
+}
+
+// ---- NEW: Multi-supplier comparison with new API ----
+async function runCompareMulti() {
+  const suppliers = [
+    document.getElementById('compare-a').value,
+    document.getElementById('compare-b').value,
+    document.getElementById('compare-c').value
+  ].filter(s => s);
+  
+  if (suppliers.length < 2) {
+    alert('Please select at least 2 suppliers to compare');
+    return;
+  }
+
+  const resultEl = document.getElementById('compare-result-new');
+  resultEl.innerHTML = '<div style="color:var(--muted);padding:20px;text-align:center;">Comparing suppliers...</div>';
+
+  try {
+    const res = await fetch('/supplywise/compare', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ supplier_names: suppliers })
+    });
+    const data = await res.json();
+
+    // Build comparison cards grid
+    let html = '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;">';
+    data.suppliers.forEach(s => {
+      html += `
+        <div class="compare-card">
+          <h3>${s.name} <span class="risk-badge risk-${s.risk_level}">${s.risk_level}</span></h3>
+          <div class="cat">${s.category} · ${s.location}</div>
+          <div class="compare-metric"><span class="k">Contact</span><span><a class="contact-link" href="tel:${s.phone}">${s.phone}</a></span></div>
+          <div class="compare-metric"><span class="k">On-time delivery</span><span>${(s.on_time_rate*100).toFixed(0)}%</span></div>
+          <div class="compare-metric"><span class="k">Defect rate</span><span>${(s.defect_rate*100).toFixed(2)}%</span></div>
+          <div class="compare-metric"><span class="k">Avg lead time</span><span>${s.avg_lead_time_days}d</span></div>
+          <div class="compare-metric"><span class="k">Total orders</span><span>${s.total_orders}</span></div>
+        </div>
+      `;
+    });
+    html += '</div>';
+
+    // Add metrics comparison
+    html += '<div class="metric-comparison">';
+    Object.entries(data.metrics).forEach(([key, metric]) => {
+      html += `
+        <div class="metric-card">
+          <div class="metric-name">${metric.label}</div>
+          <div class="metric-values">
+            ${Object.entries(metric.values).map(([name, val]) => {
+              const isWinner = name === metric.winner;
+              return `<div style="${isWinner ? 'font-weight:700;color:var(--accent);' : ''}">
+                ${name.split(' ')[0]}: ${typeof val === 'number' ? val.toFixed(1) : val}
+                ${isWinner ? '<span class="winner-badge">BEST</span>' : ''}
+              </div>`;
+            }).join('')}
+          </div>
+        </div>
+      `;
+    });
+    html += '</div>';
+
+    // Add recommendation
+    if (data.recommendation) {
+      html += `
+        <div class="recommendation-box">
+          <h3>🏆 Recommendation: ${data.recommendation.best_overall}</h3>
+          <p>${data.recommendation.suggestion}</p>
+          <p style="margin-top:8px;font-size:12px;color:var(--muted);">
+            Wins: ${data.recommendation.wins} out of ${Object.keys(data.metrics).length} metrics
+          </p>
+        </div>
+      `;
+    }
+
+    resultEl.innerHTML = html;
+  } catch (e) {
+    resultEl.innerHTML = `<div style="color:var(--high);padding:20px;">Error: ${e.message}</div>`;
+  }
+}
+
+// ---- Ask AI ----
+async function askQuestion() {
+  const input = document.getElementById('query-input');
+  const btn = document.getElementById('ask-btn');
+  const answerEl = document.getElementById('answer');
+  const sourcesEl = document.getElementById('sources');
+  const query = input.value.trim();
+  if (!query) return;
+
+  btn.disabled = true;
+  answerEl.innerHTML = '<span class="loading">Thinking...</span>';
+  sourcesEl.textContent = '';
+
+  try {
+    const res = await fetch('/supplywise/query', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ query })
+    });
+    const data = await res.json();
+    answerEl.textContent = data.answer;
+    if (data.sources && data.sources.length) {
+      sourcesEl.textContent = 'Sources: ' + data.sources.join(', ');
+    }
+  } catch (e) {
+    answerEl.textContent = 'Error: ' + e.message;
+  } finally {
+    btn.disabled = false;
+  }
+}
+
+document.getElementById('query-input').addEventListener('keydown', e => { if (e.key === 'Enter') askQuestion(); });
+document.getElementById('search-input').addEventListener('keydown', e => { if (e.key === 'Enter') runSearchFromInput(); });
+
+// ---- NEW: Products functions ----
+let productsData = null;
+
+async function loadProducts() {
+  try {
+    const res = await fetch('/supplywise/products');
+    productsData = await res.json();
+    
+    // Populate product category filter
+    const categories = await fetch('/supplywise/products/categories/list');
+    const catData = await categories.json();
+    const prodCatFilter = document.getElementById('product-category-filter');
+    catData.categories.forEach(c => {
+      const opt = document.createElement('option');
+      opt.value = c;
+      opt.textContent = c;
+      opt.style.background = '#1a1a1a';
+      opt.style.color = '#fff';
+      prodCatFilter.appendChild(opt);
+    });
+    
+    renderProducts();
+  } catch (e) {
+    console.error('Error loading products:', e);
+  }
+}
+
+function renderProducts() {
+  if (!productsData) return;
+  
+  const searchFilter = document.getElementById('product-search').value.toLowerCase();
+  const catFilter = document.getElementById('product-category-filter').value;
+  
+  const filtered = productsData.products
+    .filter(p => !searchFilter || p.name.toLowerCase().includes(searchFilter) || p.description.toLowerCase().includes(searchFilter))
+    .filter(p => !catFilter || p.category === catFilter);
+  
+  document.getElementById('product-count').textContent = `${filtered.length} product${filtered.length !== 1 ? 's' : ''}`;
+  
+  const grid = document.getElementById('products-grid');
+  grid.innerHTML = filtered.map(p => `
+    <div class="product-card" onclick="showProductDetail('${p.id}')">
+      <img class="product-img" src="${p.image_url}" alt="${p.name}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400'" />
+      <div class="product-body">
+        <div class="cat">${p.category} · ${p.type}</div>
+        <h3>${p.name}</h3>
+        <div class="price">₹${p.avg_price.toLocaleString()} <span style="font-size:12px;font-weight:400;color:var(--muted);">/ ${p.unit}</span></div>
+        <div class="desc">${p.description}</div>
+      </div>
+    </div>
+  `).join('');
+}
+
+async function showProductDetail(productId) {
+  try {
+    const res = await fetch(`/supplywise/products/${productId}`);
+    const product = await res.json();
+    
+    const modal = `
+      <div style="position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.8);display:flex;align-items:center;justify-content:center;z-index:1000;padding:20px;" onclick="this.remove()">
+        <div style="background:var(--card-bg);border:1px solid var(--border);border-radius:16px;max-width:600px;width:100%;max-height:90vh;overflow:auto;" onclick="event.stopPropagation()">
+          <img src="${product.image_url}" style="width:100%;height:300px;object-fit:cover;border-radius:16px 16px 0 0;" />
+          <div style="padding:24px;">
+            <div style="color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:0.03em;margin-bottom:6px;">${product.category} · ${product.type}</div>
+            <h2 style="font-size:22px;margin-bottom:12px;">${product.name}</h2>
+            <div style="font-size:24px;font-weight:700;color:var(--accent);margin-bottom:16px;">₹${product.avg_price.toLocaleString()} <span style="font-size:14px;font-weight:400;color:var(--muted);">/ ${product.unit}</span></div>
+            <p style="color:var(--muted);line-height:1.6;margin-bottom:16px;">${product.description}</p>
+            ${product.common_suppliers && product.common_suppliers.length ? `
+              <div style="border-top:1px solid var(--border);padding-top:16px;margin-top:16px;">
+                <div style="font-size:13px;font-weight:600;margin-bottom:8px;">Common Suppliers:</div>
+                <div style="font-size:12px;color:var(--muted);">${product.common_suppliers.join(', ')}</div>
+              </div>
+            ` : ''}
+            <button onclick="this.closest('[style*=fixed]').remove()" style="margin-top:20px;width:100%;background:var(--accent);color:#fff;border:none;padding:12px;border-radius:8px;cursor:pointer;font-weight:600;">Close</button>
+          </div>
+        </div>
+      </div>
+    `;
+    document.body.insertAdjacentHTML('beforeend', modal);
+  } catch (e) {
+    alert('Error loading product details: ' + e.message);
+  }
+}
+
+// ---- NEW: Excel functions ----
+async function exportToExcel() {
+  try {
+    const res = await fetch('/supplywise/export');
+    const blob = await res.blob();
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'suppliers_export.xlsx';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    window.URL.revokeObjectURL(url);
+  } catch (e) {
+    alert('Error exporting to Excel: ' + e.message);
+  }
+}
+
+async function downloadTemplate() {
+  try {
+    const res = await fetch('/supplywise/template');
+    const blob = await res.blob();
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'supplier_template.xlsx';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    window.URL.revokeObjectURL(url);
+  } catch (e) {
+    alert('Error downloading template: ' + e.message);
+  }
+}
+
+loadDashboard();
+</script>
+</body>
+</html>

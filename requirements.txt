@@ -11,3 +11,5 @@ sqlalchemy
 python-dotenv
 langchain-ollama
 langchain-huggingface
+pandas
+scikit-learn
